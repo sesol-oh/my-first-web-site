@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 제이쿼리 연결 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- 스와이퍼 연결 -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<!-- 메인페이지 css 연결 -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css" type="text/css">
+	<!-- reset css 연결-->
+	<link rel="stylesheet" href="css/commen/reset.css">
+	<!-- 애니메이션 animate css 연결-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/commen/animations.css">
+
+	<title> Haagen-Dazs </title>
+</head>
+
+<body>
+	<!-- 전체 wrap -->
+	<div id="wrap">
+		<header>
+			<!-- 모바일버전  헤더 -->
+			<div class="m_header">
+			<!-- 하겐다즈 로고 -->
+				<a href="index.html" class="m_logo">
+					<img src="img/logo.png" alt=" 하겐다즈 로고">
+				</a>
+			<!-- 햄버거 버튼-->	
+				<a href="#" class="m_menu">
+				 <img src="img/ham.png" alt="모바일 메뉴버튼"> 
+				 </a>
+			<!-- 메뉴 -->	 
+				<div class="m_nav">
+					<p>HAAGEN DAZS</p>
+					<img class="m_close" src="img/close.png" alt="메뉴 닫기">
+					<p class="m_line"></p>
+					<ul class="m_subUl">
+						<li class="mobile1"><a href="#">MENU</a>
+							<ul class="m_submenu1">
+								<li><a href="index_sub.html">신메뉴</a></li>
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li class="mobile2"><a href="#">BRAND</a>
+							<ul class="m_submenu2">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li class="mobile3"><a href="#">EVENT</a>
+							<ul class="m_submenu3">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<li class="mobile4"><a href="#">STORE</a>
+							<ul class="m_submenu4">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="#" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li class="mobile5"><a href="#">ABOUT</a>
+							<ul class="m_submenu5">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div>
+						<a href="index_login.html">LOGIN</a>
+						<a href="#">SIGN UP</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- 헤더 오른쪽 박스 wrap -->
+			<div class="header_R">
+				<ul>
+					<li><a href="index_login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">SNS연동</a></li>
+					<li class="h_facebook">
+					<a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"></a>
+					</li>
+					<li class="h_insta">
+					<a href="https://www.instagram.com/haagendazskorea/?hl=ko" target="_blank"></a>
+					</li>
+					<li class="h_youtube">
+					<a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- nav (서브메뉴 뒷 배경위한 wrap) -->
+			<div class="mainWrap">
+				<nav>
+					<ul class="mainMenu">
+					
+						<li><a href="index_sub.html">메뉴</a>
+							<ul class="subMenu">
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li><a href="brand.html">브랜드</a>
+							<ul class="subMenu">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li><a href="membership.html">이벤트</a>
+							<ul class="subMenu">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<!-- 로고 -->
+						<li class="logo"><a href="index.html">
+								<img src="img/logo.png" alt=" 하겐다즈 로고"></a>
+						</li>
+						<li><a href="store.html">매장소개</a>
+							<ul class="subMenu">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li><a href="#">고객센터</a>
+							<ul class="subMenu">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="#">온라인 구매</a>
+							<ul class="subMenu">
+								<li><a href="https://haagendazs-store.co.kr/" target="_blank">공홈 구매</a></li>
+								<li><a href="https://smartstore.naver.com/haagendazstore" target="_blank">
+										네이버 구매
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 메인콘텐츠 -->
+		<div class="main">
+			<!-- 메인콘텐츠 제목 텍스트  -->
+			<p>
+				<span>HAAGEN-DAZS</span>
+				<span>NEW</span>
+				<span>#MENU</span>
+				<span>#EVENT</span>
+				<span>#PROMOTION</span>
+			</p>
+
+			<!-- 콘텐츠 이미지 -->
+			<div class="back_wrap">
+				<input type="radio" name="slide" id="slide01" checked>
+				<input type="radio" name="slide" id="slide02">
+				<input type="radio" name="slide" id="slide03">
+				<input type="radio" name="slide" id="slide04">
+
+				<!-- 메인 콘텐츠 -->
+				<div class="pagewrap">
+					<!-- 콘텐츠 4개 ul 태그-->
+					<ul class="mainul">
+						<!-- 콘텐츠 첫번째 li-->
+						<li class="mainli">
+							<label for="slide04" class="left"></label>
+							<label for="slide02" class="right"></label>
+							<ul class="slide01">
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/detail.html?product_no=42&cate_no=61&display_group=1" target="_blank">
+										<div class="mimg1">
+											<img src="img/pecan.png" alt="바닐라피칸">
+										</div>
+										<p>VANILLA PECAN ▶</p>
+									</a>
+								</li>
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/detail.html?product_no=108&cate_no=61&display_group=1" target="_blank">
+										<div class="mimg2">
+											<img src="img/salted.png" alt="솔티드카라멜카푸치노">
+										</div>
+										<p> SALTED CARAMEL CAPPUCCINO ▶
+											<br> <span>솔티드 카라멜 카푸치노 신제품 보러가기</span>
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/detail.html?product_no=24&cate_no=32&display_group=1">
+										<div class="mimg3">
+											<img src="img/vanlla.png" alt="바닐라">
+										</div>
+										<p> VANILLA ▶ </p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 2번째 콘텐츠-->
+						<li class="mainli">
+							<label for="slide01" class="left"></label>
+							<label for="slide03" class="right"></label>
+
+							<ul class="slide02">
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/detail.html?product_no=116&cate_no=32&display_group=1">
+										<div class="timg timg1">
+											<img src="img/main2_twist.png" alt="트위스트바닐라">
+										</div>
+										<p>TWIST &amp; CRUNCH 벨지안 초코 &amp; 바닐라 ▶ </p>
+									</a>
+								</li>
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/detail.html?product_no=115&cate_no=32&display_group=1">
+										<div class="timg timg2">
+											<img src="img/main2_twist2.png" alt="트위스트딸기">
+										</div>
+										<p>TWIST &amp; CRUNCH 벨지안 초코 &amp; 딸기 ▶
+										</p>
+										<!-- 모바일,태블릿 버전 텍스트-->
+										<p class="m_s2T">TWIST &amp; CRUNCH 벨지안 초코 &amp; 시리즈 ▶
+										</p>
+
+									</a>
+
+								</li>
+							</ul>
+						</li>
+
+						<!-- 3번째 콘텐츠-->
+						<li class="mainli">
+							<label for="slide02" class="left"></label>
+							<label for="slide04" class="right"></label>
+							<ul class="slide03">
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/list01.html">
+										<img src="img/main3_sale.png" alt="세일이벤트">
+										<img class="tablet3" src="img/tablet3.jpg" alt="세일이벤트">
+										<p> Haagen-Dazs Event 지금 바로 구매하러 가기 ▶</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- 4번째 콘텐츠-->
+						<li class="mainli">
+							<label for="slide03" class="left"></label>
+							<label for="slide01" class="right"></label>
+							<ul class="slide04">
+								<li>
+									<a href="https://haagendazs-store.co.kr/product/list01.html">
+										<img src="img/main4_holiday.png" alt="세일이벤트">
+										<img class="tablet4" src="img/tablet4.jpg" alt="세일이벤트">
+										<p> Holidays SET 지금 바로 확인하러 가기 ▶</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+					<!-- /mainwrap -->
+				</div>
+				<!-- /backwrap    -->
+			</div>
+			<!-- /main -->
+		</div>
+
+
+		<!-- 추천메뉴 콘텐츠2  -->
+		<section class="content2">
+			<!-- 라인 -->
+			<div class="line1"></div>
+			<!-- 추천메뉴 제목 -->
+			<div class="title">
+				<h1>하겐다즈 추천메뉴</h1>
+				<h2>Recommended Menu</h2>
+			</div>
+
+			<!--  하겐다즈 추천 메뉴 swiper 넘기기효과  -->
+
+			<!-- 추천메뉴 스틱바 윗줄 -->
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/lime.png" alt="라임">
+							<p> LIME MOJITO<br>라임 모히또</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/pinacolada.png" alt="피나콜라다">
+							<p> PINA COLADA <br> 피나콜라다</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/dark.png" alt="다크초콜릿">
+							<p> CHOCOLATE&amp;ALMOND<br>다크 초콜릿 아몬드</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/cookies.png" alt="쿠키앤크림">
+							<p> COOKIES&amp;CREAM <br>쿠키앤크림</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/green.png" alt="그린티녹차">
+							<p>GREEN TEA <br>그린티 녹차</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/maca.png" alt="마카다미아">
+							<p>MACADAMIA NUT<br> 마카다미아 넛 </p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/mango.png" alt="망고">
+							<p> MANGO &amp; CREAM <br> 망고앤크림</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/melon.png" alt="멜론">
+							<p> CANTALOUPE MELON<br>칸탈로프 멜론</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 추천메뉴 버튼 -->
+			<div class="but">
+				<div class="s_left swiper-button-prev"> </div>
+				<a href="https://haagendazs-store.co.kr/" target="_blank">
+					구매하러 가기 BUY
+				</a>
+				<div class="s_right swiper-button-next"></div>
+			</div>
+
+
+
+			<!-- 추천메뉴 스틱바 아랫줄 -->
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/strowberries.png" alt="딸기와크림">
+							<p> STROWBERIES&amp;CREAM<br>딸기앤크림</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/greentea.png" alt="그린티">
+							<p>GREEN TEA&amp;ALMOND<br> 그린티아몬드 </p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/cookiescream.png" alt="쿠키앤크림">
+							<p>COOKIES&amp;CREAM<br>쿠키앤크림</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/almone.png" alt="바닐라 카라멜 아몬드">
+							<p>VANILLA CARAMEL<br> 바닐라 카라멜 아몬드</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/peanut.png" alt="피넛버터">
+							<p> PEANUT BUTTER <br>피넛 버터 크런치</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/packpeanut.png" alt="스틱바팩">
+							<p class="stick_mr">CARAMEL &amp; BUTTER<br> 솔티드 카라멜 &amp; 피넛 버터 </p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/packcaramel.png" alt="스틱바팩">
+							<p class="stick_mr">CARAMEL &amp; VANILLA<br>솔티드 &amp; 바닐라 카라멜</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="index_sub.html">
+							<img src="img/packchoc.png" alt="스틱바팩">
+							<p class="stick_mr">VANILLA &amp; CHOC<br> 바닐라 카라멜 &amp; 초콜렛촉</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 레시피 콘텐츠 -->
+		<section class="content3">
+
+			<p class="recipe_ko">특별한 맛, 특별한 레시피</p>
+			<p class="recipe_en"> HAAGEN RECIPE</p>
+
+			<div class="recipeWrap">
+				<!-- 레시피1 -->
+				<div class="recipe1">
+					<a class="modal-open" href="javascript:openModal('modal1');">
+						<span class="effect">아포가토 레시피 CLICK <img src="img/click.png" alt="레시피 보기"><br></span>
+					</a>
+					<p class="recipe_p">
+						<span>HAAGEN AFFOGATO</span><br>
+						하겐다즈 바닐라 아포가토<br>
+						고소한 바닐라 아이스크림 위에<br>
+						에스프레소 샷을 올리면 완성
+					</p>
+					<!--  아포가토 모달 팝업 -->
+					<div class="modal1 modal_con">
+						<!-- 아포가토 wrap -->
+						<div class="modal_Wrap">
+							<!-- 팝업 취소 버튼 -->
+							<a href="javascript:;" class="affo_close"><img src="img/close.png" alt="취소버튼"> </a>
+							<!-- 아포가토 왼쪽 콘텐츠 -->
+							<div class="affo1">
+								<h3>하겐다즈 아포가토 </h3>
+								<p></p>
+								<img src="img/affo.jpg" alt="아포가토">
+							</div>
+							<!-- 아포가토 오른쪽 콘텐츠 -->
+							<div class="affo2">
+								<div class="affoTop">
+									<!-- flavour-->
+									<div>
+										<p>FLAVOUR</p>
+										<ul>
+											<li>
+												<img src="img/flavor_maca.png" alt="마카다미아맛">
+												<p>마카다미아넛</p>
+											</li>
+											<li>
+												<img src="img/flavor_vanilla.png" alt="바닐라맛">
+												<p>바닐라</p>
+											</li>
+										</ul>
+									</div>
+									<!-- INGREDIENT-->
+									<div>
+										<p>INGREDIENT</p>
+										<p>1. 하겐다즈 아이스크림 1~2 스쿱</p>
+										<p>2. 에스프레소 1샷</p>
+									</div>
+								</div>
+								<!-- DIRECTION -->
+								<div class="affo_direc">
+									<p>DIRECTION </p>
+									<p>1. 유리잔에 하겐다즈 아이스크림을 1 ~ 2 스쿱을 담는다. </p>
+									<p>2. 아이스크림 위에 준비한 에스프레소 샷을 부어주면 완성! </p>
+									<ul>
+										<li><img src="img/step_05_01.png" alt="유리잔안에아이스크림"></li>
+										<li><img src="img/step_05_02.png" alt="아이스크림과 에스프레소샷사진"></li>
+										<li><img src="img/step_05_03.png" alt="이포가토이미지"></li>
+									</ul>
+								</div>
+							</div>
+							<!-- /affoWrap -->
+						</div>
+						<!-- /modal1 -->
+					</div>
+					<!-- /recipe1 -->
+				</div>
+
+				<!-- 레시피2 -->
+				<div class="recipe2">
+					<a class="modal-open" href="javascript:openModal('modal2');">
+						<span class="effect">라떼 레시피 CLICK <img src="img/click.png" alt="레시피 보기"><br></span>
+					</a>
+					<p class="recipe_p">
+						<span>GREEN TEA LATTE</span><br>
+						하겐다즈 그린티 아이스 라떼<br>
+						시원한 우유위에 하겐다즈 그린티<br>
+						아이스크림을 올리면 완성
+					</p>
+					<!--  아이스크림라떼 모달 팝업 -->
+					<div class="modal2 modal_con">
+						<!-- 라떼 wrap -->
+						<div class="modal_Wrap">
+							<!-- 팝업 취소 버튼 -->
+							<a href="javascript:;" class="affo_close"><img src="img/close.png" alt="취소버튼"> </a>
+							<!-- 라떼 왼쪽 콘텐츠 -->
+							<div class="latte1">
+								<h3>하겐다즈 아이스크림 라떼 </h3>
+								<p></p>
+								<div class="v_stop">
+									<iframe id="player" width="560" height="315" style="border:none" src="https://www.youtube.com/embed/USfjmw5URCk?autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<!-- 라떼 오른쪽 콘텐츠 -->
+							<div class="latte2">
+								<p>FLAVOUR</p>
+								<ul>
+									<li><img src="img/flavor_vanilla.png" alt="바닐라맛">
+										<p>바닐라</p>
+									</li>
+									<li><img src="img/flavor_green.png" alt="그린티맛">
+										<p>그린티</p>
+									</li>
+									<li><img src="img/flavor_straw.png" alt="스트로베리맛">
+										<p>스트로베리</p>
+									</li>
+									<li><img src="img/flavor_maca.png" alt="마카다미아넛맛">
+										<p>마카다미아넛</p>
+									</li>
+									<li><img src="img/flavor_tira.png" alt="티라미수맛">
+										<p>티라미수</p>
+									</li>
+									<li><img src="img/flavor_choco.png" alt="초콜릿맛">
+										<p>초콜릿</p>
+									</li>
+									<li><img src="img/flavor_cookies.png" alt="쿠키앤크림맛">
+										<p>쿠키앤크림</p>
+									</li>
+								</ul>
+							</div>
+							<div class="latte3">
+								<p class="latte3_title">INGREDIENT</p>
+								<p>1. 하겐다즈 아이스크림 1스쿱</p>
+								<p>2. 우유 200ml</p>
+								<p>3. 얼음 </p>
+
+								<p class="latte3_title">DIRECTION</p>
+								<p>1. 컵에 얼음과 우유 200ml를 붓는다.</p>
+								<p>2. 하겐다즈 아이스크림을 올려 완성</p>
+
+								<p class="latte3_title">TIP</p>
+								<p>아이스크림에 따라 녹차가루, 초코시럽,</p>
+								<p>딸기시럽 등을 곁들여 드셔보세요.</p>
+							</div>
+
+
+							<!-- /latteWrap -->
+						</div>
+						<!-- /modal2 -->
+					</div>
+				</div>
+				<div class="recipe3">
+					<a class="modal-open" href="javascript:openModal('modal3');">
+						<span class="effect">칵테일 레시피 CLICK <img src="img/click.png" alt="레시피 보기"><br></span>
+					</a>
+					<p class="recipe_p">
+						<span>HAAGEN COCKTAIL</span><br>
+						베일리스 티라미수 칵테일<br>
+						베일리스 리큐어와 에스프레소,<br>
+						하겐다즈 아이스크림의 만남
+					</p>
+					<!--  칵테일 모달 팝업 -->
+					<div class="modal3 modal_con">
+						<!-- 칵테일 wrap -->
+						<div class="modal_Wrap">
+							<!-- 팝업 취소 버튼 -->
+							<a href="javascript:;" class="affo_close"><img src="img/close.png" alt="취소버튼"> </a>
+							<!-- 칵테일 왼쪽 콘텐츠 -->
+							<div class="cock1">
+								<h3> 베일리스 티라미수 칵테일 </h3>
+								<p></p>
+								<img src="img/cocktail.jpg" alt="칵테일이미지">
+							</div>
+							<!-- 칵테일 오른쪽 콘텐츠 -->
+							<div class="cock2">
+								<div class="cockTop">
+									<!-- flavour-->
+									<div>
+										<p>FLAVOUR</p>
+										<ul>
+											<li>
+												<img src="img/flavor_vanilla.png" alt="바닐라맛">
+												<p>바닐라</p>
+											</li>
+											<li>
+												<img src="img/flavor_maca.png" alt="마카다미아맛">
+												<p>마카다미아넛</p>
+											</li>
+											<li>
+												<img src="img/flavor_tira.png" alt="티라미수맛">
+												<p>티라미수</p>
+											</li>
+										</ul>
+									</div>
+									<!-- INGREDIENT-->
+									<div>
+										<p>INGREDIENT</p>
+										<p>1. 하겐다즈 아이스크림 1~2 스쿱</p>
+										<p>2. 베일리스 45ml</p>
+										<p>3. 에스프레소 35ml &#91;약 1.5샷&#93;</p>
+										<p>4. 시나몬 파우더 약간</p>
+										<p>5. 우유100ml , 얼음 </p>
+									</div>
+								</div>
+								<!-- DIRECTION -->
+								<div class="cock_direc">
+									<p>DIRECTION </p>
+									<p>1. 컵에 얼음과 아이리쉬 크림 리큐어 베일리스 45ml를 붓는다. </p>
+									<p>2. 에스프레소 35ml를 넣고 우유를 부어 다같이 섞어준다. </p>
+									<p>3. 2번 위에 아이스크림 1스쿱을 올린다. </p>
+									<p>4. 시나몬 파우더를 뿌려 완성. </p>
+								</div>
+							</div>
+							<!-- /cockWrap -->
+						</div>
+						<!-- /modal3 -->
+					</div>
+				</div>
+				<div class="recipe4">
+					<a class="modal-open m4" href="javascript:openModal('modal4');">
+						<span class="effect">파르페 레시피 CLICK <img src="img/click.png" alt="레시피 보기"><br></span>
+					</a>
+					<p class="recipe_p">
+						<span>ICE CREAM PARFAIT</span><br>
+						하겐다즈 아이스크림 파르페<br>
+						여러가지 재료들과 아이스크림의<br>
+						조화로운 맛을 즐겨보세요!
+					</p>
+					<!--  파르페 모달 팝업 -->
+					<div class="modal4 modal_con">
+						<!-- 파르페 wrap -->
+						<div class="modal_Wrap">
+							<!-- 팝업 취소 버튼 -->
+							<a href="javascript:;" class="affo_close"><img src="img/close.png" alt="취소버튼"> </a>
+							<!-- 파르페 왼쪽 콘텐츠 -->
+							<div class="parfait1">
+								<h3> 아이스크림 파르페 </h3>
+								<p></p>
+								<div class="p_stop">
+									<iframe id="player2" width="560" height="315" style="border:none" src="https://www.youtube.com/embed/p57eyruUuC4?autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<!-- 파르페 오른쪽 콘텐츠 -->
+							<div class="parfait2">
+								<div class="parfaitTop">
+									<!-- flavour-->
+									<div>
+										<p>FLAVOUR</p>
+										<ul>
+											<li>
+												<img src="img/flavor_straw.png" alt="스트로베리맛">
+												<p>스트로베리</p>
+											</li>
+											<li>
+												<img src="img/flavor_cookies.png" alt="쿠키앤크림맛">
+												<p>쿠키앤크림</p>
+											</li>
+											<li>
+												<img src="img/flavor_choco.png" alt="초콜릿맛">
+												<p>초콜릿</p>
+											</li>
+											<li>
+												<img src="img/flavor_blue.png" alt="블루베리크림맛">
+												<p>블루베리크림</p>
+											</li>
+										</ul>
+									</div>
+									<!-- INGREDIENT-->
+									<div>
+										<p>INGREDIENT</p>
+										<p>1. 하겐다즈 아이스크림 1~2 스쿱</p>
+										<p>2. 오레오 6개</p>
+										<p>3. 빼빼로 등 긴 과자</p>
+										<p>4. 생크림 100ml</p>
+										<p>5. 딸기 약 8개 </p>
+									</div>
+								</div>
+								<!-- DIRECTION -->
+								<div class="parfait_direc">
+									<p>DIRECTION </p>
+									<p>1. 오레오 3개는 크림 제거 후 잘게 부수고, 나머지 3개는 1/4등분 한다. </p>
+									<p>2. 딸기 6개는 슬라이스 하여 준비, 남은 딸기는 전부 다진다. </p>
+									<p>3. 컵에 생크림 > 오레오 > 생크림 > 딸기 순으로 차곡차곡 쌓아준다. </p>
+									<p>4. 생크림을 평평하게 펴주고 아이스크림 1스쿱과 과자를 꽂으면 완성! </p>
+								</div>
+							</div>
+							<!-- /parfaitWrap -->
+						</div>
+						<!-- /modal4 -->
+					</div>
+
+				</div>
+			</div>
+
+			<a href="https://haagendazs-store.co.kr/" target="_blank" class="recipe_btn">
+				<span class="re_pc">레시피 더보러 가기 ▶</span>
+				<span class="re_mo">사진을 클릭해서 레시피를 확인해 보세요 ▲</span>
+			</a>
+
+		</section>
+
+
+
+
+
+		<!-- 하겐다즈 이벤트 -->
+		<div class="eventWrap">
+			<div class="eventText">
+				<p>HAAGEN EVENT</p>
+				<p>하겐다즈와 함께하는 이벤트 <br>
+					SNS를 통해 확인 후 참여해 보세요.</p>
+				<div class="eventIcon">
+					<a href="https://www.facebook.com/HaagenDazsKR/"><img src="img/snsfacebook.png" alt="페이스북"></a>
+					<a href="https://www.instagram.com/haagendazskorea/"><img src="img/snsins.png" alt="인스타그램"></a>
+					<a href="https://www.youtube.com/c/HaagenDazsKorea/featured"><img src="img/snsyotube.png" alt="유튜브"></a>
+				</div>
+			</div>
+			<div class="videoWrap">
+				<div class="eventVideo">
+					<iframe width="900" height="506" style="border:none" src="https://www.youtube.com/embed/TnFWhFrKuXI?autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- /eventwrap-->
+		</div>
+
+
+
+
+
+		<!-- 인스타그램 -->
+		<div class="instargram">
+			<!-- 인스타그램 제목 텍스트 -->
+			<div class="in_text">
+				<h3>INSTARGRAM</h3>
+				<p>인스타그램</p>
+			</div>
+			<!-- 인스타그램 이미지 -->
+			<div class="in_img">
+				<a href="https://www.instagram.com/haagendazskorea/?hl=ko" target="_blank">
+					<ul>
+						<li> <img src="img/inone.jpg" alt="행사"> </li>
+						<li><img src="img/intwo.jpg" alt="행사"></li>
+						<li><img src="img/inthree.jpg" alt="행사"></li>
+						<li><img src="img/infour.jpg" alt="행사"></li>
+						<li><img src="img/infive.jpg" alt="행사"></li>
+					</ul>
+					<ul>
+						<li><img src="img/insix.jpg" alt="행사"></li>
+						<li><img src="img/inseven.jpg" alt="행사"></li>
+						<li><img src="img/ineight.jpg" alt="행사"> </li>
+						<li><img src="img/innine.jpg" alt="행사"></li>
+						<li><img src="img/inten.jpg" alt="행사"></li>
+					</ul>
+				</a>
+			</div>
+		</div>
+
+
+
+		<footer id="footer">
+			<!-- 상단 footer 라인-->
+			<div class="f_top">
+				<div class="ftop_text">
+					<p> <a href="#" class="pageAlert">공지사항&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+						<a href="" class="pageAlert">이벤트&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+						<a href="store.html">매장안내&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+						<a href="#" class="pageAlert">고객센터</a>
+					</p>
+				</div>
+			</div>
+
+			<!-- 가운데 footer 콘텐츠 -->
+			<div class="f_wrap">
+				<!-- footer 로고 이미지 -->
+				<img src="img/logotwo.png" alt="하겐다즈 로고">
+
+				<div class="f_textL">
+					<p>한국하겐-다즈(주) 대표 : 김미조</p>
+					<p>주소 : 서울특별시 강남구 테헤란로311 [역삼동, 아남타워 6층] | 개인정보관리책임자 : 김미조대표 <br>
+						통신판매신고 : 강남-8166 | 대표전화 : 02-508-8500 <br class="br_mo"> | 사업자등록번호 : 106-81-28964
+					</p>
+
+					<p> 주식회사 에스와이피글로벌 대표 : 김광용[사업자정보확인] </p>
+					<p>주소 : 서울특별시 강남구 봉은사로112길 26, 5층 502호<br class="br_mo"> [삼성동, 한호빌딩]<br>
+						사업자등록번호 : 262-88-00829 <br class="br_mo"> | 통신판매신고 :  2018-서울강남-00403<br>
+						Email : cs@unitoa.com | 개인정보관리책임자 : 조현정 <br class="br_mo"> | 대표전화 : 070-7549-7020
+					</p>
+				</div>
+
+				<div class="f_textR">
+					<p> 하겐다즈 고객만족센터</p>
+					<p> 070-7549-7020</p>
+					<p>*고객센터 운영시간 : 평일 10:00 ~ 17:00 <br>
+						(점심시간 12:00 ~ 13:00)
+					</p>
+					<p> 하겐다즈몰 판매운영대행 : 주식회사 에스와이피 글로벌</p>
+				</div>
+			</div>
+
+
+			<div class="f_bottom">
+				<div class="fbot_text">
+					<p> capyright @ 2021 Haagen-Dazs Korea. All Right Reserved.</p>
+					<p> <a href="https://haagendazs-store.co.kr/member/privacy.html">개인정보 처리방침 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+						<a href="https://haagendazs-store.co.kr/member/agreement.html">이용약관 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+						<a href="https://haagendazs-store.co.kr/member/email.html">이메일 무단수집거부</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+
+
+		<!-- 전체 wrap 닫는 div  -->
+	</div>
+
+
+	<!-- 스크립트 연결 -->
+	<script src="/js/header.js"></script>
+	<script src="js/main.js"></script>
+</body></html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haagen-Dazs 원재료</title>
+        <!-- 제이쿼리 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 페이지 css -->
+    <link rel="stylesheet" href="css/rawmaterial.css" type="text/css">
+    <!-- 리셋 css -->
+    <link rel="stylesheet" href="css/commen/reset.css" type="text/css">
+    <!-- 헤더,푸터 css -->
+    <link rel="stylesheet" href="css/header_footer.css" type="text/css">
+   <!-- 미디어쿼리 css -->
+   <link rel="stylesheet" href="css/media.css" type="text/css"> 
+</head>
+<body>
+<div id="wrap">
+		<header>
+			<!-- 모바일버전  헤더 -->
+			<div class="m_header">
+			<!-- 하겐다즈 로고 -->
+				<a href="index.html" class="m_logo">
+					<img src="img/logo.png" alt=" 하겐다즈 로고">
+				</a>
+			<!-- 햄버거 버튼-->	
+				<a href="#" class="m_menu">
+				 <img src="img/ham.png" alt="모바일 메뉴버튼"> 
+				 </a>
+			<!-- 메뉴 -->	 
+				<div class="m_nav">
+					<p>HAAGEN DAZS</p>
+					<img class="m_close" src="img/close.png" alt="메뉴 닫기">
+					<p class="m_line"></p>
+					<ul class="m_subUl">
+						<li class="mobile1"><a href="#">MENU</a>
+							<ul class="m_submenu1">
+								<li><a href="index_sub.html">신메뉴</a></li>
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li class="mobile2"><a href="#">BRAND</a>
+							<ul class="m_submenu2">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li class="mobile3"><a href="#">EVENT</a>
+							<ul class="m_submenu3">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<li class="mobile4"><a href="#">STORE</a>
+							<ul class="m_submenu4">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="#" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li class="mobile5"><a href="#">ABOUT</a>
+							<ul class="m_submenu5">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div>
+						<a href="index_login.html">LOGIN</a>
+						<a href="#">SIGN UP</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- 헤더 오른쪽 박스 wrap -->
+			<div class="header_R">
+				<ul>
+					<li><a href="index_login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">SNS연동</a></li>
+					<li class="h_facebook">
+					<a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"></a>
+					</li>
+					<li class="h_insta">
+					<a href="https://www.instagram.com/haagendazskorea/?hl=ko" target="_blank"></a>
+					</li>
+					<li class="h_youtube">
+					<a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- nav (서브메뉴 뒷 배경위한 wrap) -->
+			<div class="mainWrap">
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="index_sub.html">메뉴</a>
+							<ul class="subMenu">
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li><a href="brand.html">브랜드</a>
+							<ul class="subMenu">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li><a href="membership.html">이벤트</a>
+							<ul class="subMenu">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<!-- 로고 -->
+						<li class="logo"><a href="index.html">
+								<img src="img/logo.png" alt=" 하겐다즈 로고"></a>
+						</li>
+						<li><a href="store.html">매장소개</a>
+							<ul class="subMenu">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li><a href="#">고객센터</a>
+							<ul class="subMenu">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="#">온라인 구매</a>
+							<ul class="subMenu">
+								<li><a href="https://haagendazs-store.co.kr/" target="_blank">공홈 구매</a></li>
+								<li><a href="https://smartstore.naver.com/haagendazstore" target="_blank">
+										네이버 구매
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+    
+    
+<div class="rowtext">
+<h1>Haagen-Dazs 특별한 원료</h1>
+<p>하겐다즈의 특별한 맛은 품질 좋은 원료와 합성재료 없이 천연 재료에서 오는 최상의 맛입니다.</p>
+</div>
+
+    
+<!-- 콘텐츠 박스-->
+<section>    
+<!--  탭 메뉴 <display:none>  -->
+<div class="content">
+    <input type="radio"  name="tabmenu" id="tab01" checked>
+    <input type="radio"  name="tabmenu" id="tab02">
+    <input type="radio"  name="tabmenu" id="tab03">
+    <input type="radio"  name="tabmenu" id="tab04">
+
+<!-- 바닐라 콘텐츠    -->
+    <div class="box1 vcon1">
+        <div class="con_set">
+           <div class="vcon_img">
+                <img src="/img/r_v.png" alt="바닐라">
+            </div>
+            <div class="vcon_text">
+                <h2>바닐라</h2>
+                <h3>마다가스카르산 바닐라, 부드러운 텍스쳐</h3>
+         <p>하겐다즈 바닐라 아이스크림은 5가지의 심플한  <br class="br_mo">  천연 원료인 <br class="br_pc">
+         달걀, 우유, 크림, 바닐라, 설탕으로 만들어집니다.<br class="br_mo">  이 다섯 재료의 절묘한 조화로 <br class="br_pc">
+         다른 어떤 제품과도 비교할 수 없는 <br class="br_mo"> 하겐다즈만의 깊고 부드러운 맛의 센세이션이 시작됩니다. <br class="br_pc">
+          깊고 <br class="br_mo"> 부드러운 맛의 정수를 보여주는 순수한 맛을 경험해보세요.</p>
+            </div>
+         </div>
+    </div>
+
+<!--    딸기 콘텐츠  -->
+    <div class="box1 scon2"> 
+        <div class="con_set"> 
+          <div class="vcon_img">
+                <img src="/img/r_s.png" alt="딸기">
+            </div>
+            <div class="vcon_text">
+                <h2>딸기</h2>
+                <h3>특별한 하겐다즈의 시그니처 딸기 아이스크림</h3>
+                <p>
+                     가장 완벽한 맛의 딸기 아이스크림을 <br class="br_mo"> 만들기 위하여 <br class="br_pc">
+                    6년간 알맞은 딸기를 찾았습니다. <br class="br_mo"> 기본 원료부터 다르니까, 오랜 기간동안 <br class="br_pc">
+                    하겐다즈의 <br class="br_mo">시그니처 아이스크림일 수 밖에 없죠.<br class="br_pc">
+            </div>
+       </div>
+    </div>
+    
+<!--    초콜릿 콘텐츠 -->
+    <div class="box1 ccon3">
+        <div class="con_set">
+        <div class="vcon_img">
+                <img src="/img/r_c.png" alt="초콜렛">
+            </div>
+            <div class="vcon_text">
+                <h2>초콜렛</h2>
+                <h3>벨기에산 초콜릿,부드러운 달달함 </h3>
+                <p>초콜릿에 관해서라면 하겐다즈는 <br class="br_mo"> 최고만을 추구합니다. <br class="br_pc">
+                        최고의 초콜릿을 생산하는 <br class="br_mo">  벨기에 초콜릿이 하겐다즈를 그 어떤 브랜드와도 <br class="br_pc">
+                        비교할 수 <br class="br_mo">  없는  맛의 아이스크림으로 만들어주니깐요.</p>
+            </div>
+        </div>
+     </div>
+
+<!--    카라멜 콘텐츠 -->
+    <div class="box1 mcon4">      
+        <div class="con_set">
+        <div class="vcon_img">
+                <img src="/img/r_m.png" alt="카라멜">
+            </div>
+            <div class="vcon_text">
+                <h2>카라멜</h2>
+                <h3>입안 가득 풍부한 맛, 클래식한 카라멜</h3>
+                <p>특유의 크리미함이 느껴지는  클래식 <br class="br_mo"> 카라멜 소스를 찾기 위해 <br class="br_pc">
+                        카라멜  전문가들에게 찾아가 <br class="br_mo"> 마음을 녹이는 단 하나의 레시피를 찾았습니다.<br class="br_pc"> 중독적인 맛의 <br class="br_mo">
+                         카라멜, 한 번 잡으면 손에서 놓을 수가 없는 맛이죠</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+<!--    이미지 클릭시 콘텐츠 변경됨  -->
+  <div class="vcon2">
+        <div class="btn1">
+            <label for="tab01"> <img src="img/r_v.png" alt="바닐라"> </label>
+            <label for="tab02"> <img src="img/r_s.png" alt="딸기"> </label>
+            <label for="tab03"> <img src="img/r_c.png" alt="초코"> </label>
+            <label for="tab04"> <img src="img/r_m.png" alt="카라멜"> </label>
+        </div>
+  </div>
+    
+<!--    배경 이미지 -->
+    <div class="box2 vcon1">
+        <img src="img/raw_vanillabg1.png" alt="바닐라">  </div>
+    <div class="box2 scon2">
+        <img src="img/raw_straw1.png" alt="바닐라">  </div>
+    <div class="box2 ccon3"> 
+        <img src="img/raw_choco.png" alt="바닐라">   </div>
+    <div class="box2 mcon4">
+        <img src="img/raw_caramel.png" alt="바닐라">  </div>
+
+    
+<!--    하단 텍스트 -->
+    
+      <div id="bottom1" class="box3 vcon1">
+        <p> 하겐다즈의 특별한 맛 은 무엇을 넣는 것에서 오는 것이 아닌 덜어내는 것에서부터 옵니     다. 가장 최소한의 원료만을 사용하며, <br>
+                합성 색소 및 합성 향료 없이 천연 재료로만 최상의 맛을 만들기 위한 노력을 해왔습니다. <br>
+                하겐다즈의 모든 아이스크림은 기본적으로 크림, 우유, 설탕 그리고 계란 네 가지의 기본적인 품질 좋은 원료에서 부터 시작합니다. <br>
+                이런 방식으로 하겐다즈는 놀라운 맛의 깊고 진한,  하겐다즈만이 보여줄 수 있는 아이스크림을 만들어냅니다.
+        </p>
+    </div>
+    
+    
+    
+    <div id="bottom2" class="box3 scon2">
+       <p> 하겐다즈가 만드는 프리미엄의 재료는 간단합니다. 원재료의 맛 그대로, 밀도 있게 담아내면 충분하니깐요. <br>
+
+창립자인 루벤 매투스는 고품질의 엄선된 원료만을 사용하여 세계 최고의 아이스크림을 만드는 것을  하겐다즈의  <br>
+
+비전으로  삼았습니다 .그의 철학이 지금까지도 이어져 원재료의 맛 그대로를 살려 변하지 않는 맛과 <br>
+
+최고의 아이스크림으로 성장할 수 있었습니다.
+        </p>
+    
+    </div>
+    
+    
+    <div id="bottom3" class="box3 ccon3"> 
+  <p> 하겐다즈는 세계 각국에서 찾아낸 엄선된 좋은 원재료만을 사용합니다. 깊고 진한 리얼 크림과 우유, 높은 유지방으로 완성된 <br>
+하겐다즈 아이스크림의 부드러운 텍스쳐와 60년이상 이어져 온 타협하지 않는 장인정신의 레시피 <br>
+그시작과 끝은 고품질의 원료와 철저한 장인정신 입니다.
+        </p>
+    
+    </div>
+    
+
+    <div id="bottom4" class="box3 mcon4">
+     <p> 하겐다즈의 원재료는 각각 최적의 생산지에서 얻어오는 노력을 하고 있습니다.  간단한 재료지만 좋은 재료에서 나오는 <br>
+    최고의 맛을 내는 것이 하겐다즈의 비결이라고 할 수 있습니다, 모든 하겐다즈 아이스크림은<br>
+ 엄선된 원료들만을 사용하기에 아주 부드러운 텍스쳐의 아이스크림을 만들어내고 이는 잊을 수 없는 맛을 선사하게 됩니다. <br>
+한 입 한 입 하겐다즈를 음미할 때마다 강렬하게 느끼는 즐거운 경험은 사랑하는 사람들과 함께할 때 더 배가 됩니다.s
+        </p>
+    </div>
+    
+    
+    
+    
+    
+    <!--    콘텐츠 /div -->
+    </div>
+    </section>
+
+            <footer id="footer">
+            <!-- 상단 footer 라인-->
+            <div class="f_top">
+                <div class="ftop_text">
+                    <p> <a href="#">공지사항&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이벤트&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">매장안내&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">고객센터</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 가운데 footer 콘텐츠 -->
+            <div class="f_wrap">
+                <!-- footer 로고 이미지 -->
+                <img src="img/logotwo.png" alt="하겐다즈 로고">
+
+                <div class="f_textL">
+                    <p>한국하겐-다즈(주) 대표 : 김미조</p>
+                    <p>주소 : 서울특별시 강남구 테헤란로311 [역삼동, 아남타워 6층] | 개인정보관리책임자 : 김미조대표 <br>
+                        통신판매신고 : 강남-8166 | 대표전화 : 02-508-8500 | 사업자등록번호 : 106-81-28964
+                    </p>
+
+                    <p> 주식회사 에스와이피글로벌 대표 : 김광용[사업자정보확인] </p>
+                    <p>주소 : 서울특별시 강남구 봉은사로112길 26, 5층 502호[삼성동, 한호빌딩]<br>
+                        사업자등록번호 : 262-88-00829 | 통신판매신고 : 2018-서울강남-00403<br>
+                        Email : cs@unitoa.com | 개인정보관리책임자 : 조현정 | 대표전화 : 070-7549-7020
+                    </p>
+                </div>
+
+                <div class="f_textR">
+                    <p> 하겐다즈 고객만족센터</p>
+                    <p> 070-7549-7020</p>
+                    <p>*고객센터 운영시간 : 평일 10:00 ~ 17:00 <br>
+                        (점심시간 12:00 ~ 13:00)
+                    </p>
+                    <p> 하겐다즈몰 판매운영대행 : 주식회사 에스와이피 글로벌</p>
+                </div>
+            </div>
+
+
+            <div class="f_bottom">
+                <div class="fbot_text">
+                    <p> capyright @ 2021 Haagen-Dazs Korea. All Right Reserved.</p>
+                    <p> <a href="#">개인정보 처리방침 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이용약관 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이메일 무단수집거부</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    
+    
+    <!-- 스크립트 연결 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/header.js"></script>
+        
+</div>
+</body>
+</html>

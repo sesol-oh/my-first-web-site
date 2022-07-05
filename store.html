@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Haagen-Dazs Store </title>
+	<!-- 제이쿼리 연결 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script  class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <!-- 페이지 css -->
+    <link rel="stylesheet" href="css/store.css" type="text/css">
+    <!-- 리셋 css -->
+    <link rel="stylesheet" href="css/commen/reset.css" type="text/css">
+    <!-- 헤더,푸터 css -->
+    <link rel="stylesheet" href="css/header_footer.css" type="text/css">
+   <!-- 미디어쿼리 css -->
+   <link rel="stylesheet" href="css/media.css" type="text/css"> 
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<!-- 모바일버전  헤더 -->
+			<div class="m_header">
+			<!-- 하겐다즈 로고 -->
+				<a href="index.html" class="m_logo">
+					<img src="img/logo.png" alt=" 하겐다즈 로고">
+				</a>
+			<!-- 햄버거 버튼-->	
+				<a href="#" class="m_menu">
+				 <img src="img/ham.png" alt="모바일 메뉴버튼"> 
+				 </a>
+			<!-- 메뉴 -->	 
+				<div class="m_nav">
+					<p>HAAGEN DAZS</p>
+					<img class="m_close" src="img/close.png" alt="메뉴 닫기">
+					<p class="m_line"></p>
+					<ul class="m_subUl">
+						<li class="mobile1"><a href="#">MENU</a>
+							<ul class="m_submenu1">
+								<li><a href="index_sub.html">신메뉴</a></li>
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li class="mobile2"><a href="#">BRAND</a>
+							<ul class="m_submenu2">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li class="mobile3"><a href="#">EVENT</a>
+							<ul class="m_submenu3">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<li class="mobile4"><a href="#">STORE</a>
+							<ul class="m_submenu4">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="#" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li class="mobile5"><a href="#">ABOUT</a>
+							<ul class="m_submenu5">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div>
+						<a href="index_login.html">LOGIN</a>
+						<a href="#">SIGN UP</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- 헤더 오른쪽 박스 wrap -->
+			<div class="header_R">
+				<ul>
+					<li><a href="index_login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">SNS연동</a></li>
+					<li class="h_facebook">
+					<a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"></a>
+					</li>
+					<li class="h_insta">
+					<a href="https://www.instagram.com/haagendazskorea/?hl=ko" target="_blank"></a>
+					</li>
+					<li class="h_youtube">
+					<a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- nav (서브메뉴 뒷 배경위한 wrap) -->
+			<div class="mainWrap">
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="index_sub.html">메뉴</a>
+							<ul class="subMenu">
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li><a href="brand.html">브랜드</a>
+							<ul class="subMenu">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li><a href="membership.html">이벤트</a>
+							<ul class="subMenu">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<!-- 로고 -->
+						<li class="logo"><a href="index.html">
+								<img src="img/logo.png" alt=" 하겐다즈 로고"></a>
+						</li>
+						<li><a href="store.html">매장소개</a>
+							<ul class="subMenu">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li><a href="#">고객센터</a>
+							<ul class="subMenu">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="#">온라인 구매</a>
+							<ul class="subMenu">
+								<li><a href="https://haagendazs-store.co.kr/" target="_blank">공홈 구매</a></li>
+								<li><a href="https://smartstore.naver.com/haagendazstore" target="_blank">
+										네이버 구매
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section>
+			<h1> Haagen-Dazs Store </h1>
+			<p> 하겐다즈 브랜드 스토어 매장에 방문해보세요.</p>
+			<div class="storeWrap">
+			<div class="mapWrap">
+				<div class="map">
+				<!-- 여의도점 -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10644.33359068944!2d126.91968541188834!3d37.517833025763096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f17d08d7509%3A0xcd00a0fba097c116!2z7ZWY6rKQ64uk7KaIIOyXrOydmOuPhOygkA!5e0!3m2!1sko!2skr!4v1644052107119!5m2!1sko!2skr" width="675" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<!-- 교대점 -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12661.655591305533!2d127.00659416309999!3d37.49815509999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca16f5530afaf%3A0x9895d041bacb49cd!2z7ZWY6rKQ64uk7KaIIOq1kOuMgOygkA!5e0!3m2!1sko!2skr!4v1644053363174!5m2!1sko!2skr" width="675" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<!-- 판교점 -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12679.257449265982!2d127.10324036977536!3d37.394222200000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59483d16e945%3A0x7b9996f063ee0b50!2z7ZWY6rKQ64uk7KaIIO2MkOq1kOygkA!5e0!3m2!1sko!2skr!4v1644053387926!5m2!1sko!2skr" width="675" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<!-- 분당미금점-->	
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12686.68120175849!2d127.0979305697754!3d37.3503135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c71b2baaf3%3A0x22eea8d257ea3ab1!2z7ZWY6rKQ64uk7KaIIOu2hOuLueuvuOq4iOygkA!5e0!3m2!1sko!2skr!4v1644053414210!5m2!1sko!2skr" width="675" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<!-- 아주대병원점-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9513.551156093117!2d127.0443652671188!3d37.27695384357868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5b1cb7e42e01%3A0x13e1e3f8b960c46a!2z7ZWY6rKQ64uk7KaIIOyVhOyjvOuMgOuzkeybkOygkA!5e0!3m2!1sko!2skr!4v1644053335504!5m2!1sko!2skr" width="675" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	
+									
+							
+
+				</div>
+		</div>
+				<div class="mapText">
+						<dl class="tmap1">
+							<dt>하겐다즈 여의도점</dt>
+							<dd>주소 : 서울특별시 영등포구 여의동 의사당대로 108</dd>
+							<dd>전화번호 : 02-780-0815</dd>
+							<dd>운영시간 : 오전 10:00 ~ 오후 10:00 </dd>
+						</dl>
+						<dl class="tmap2">
+							<dt>하겐다즈 교대점</dt>
+							<dd>주소 : 서울 서초구 서초중앙로 188 아크로비스타 아케이드 로비층 114-1호 </dd>
+							<dd>전화번호 : 02-3477-1002 </dd>
+							<dd>운영시간 : 오전 10:00 ~ 오후 10:00 </dd>
+						</dl>
+						<dl class="tmap3">
+							<dt>하겐다즈 판교점</dt>
+							<dd>주소 : 경기 성남시 분당구 분당내곡로 117 알파돔타워4 1층 </dd>
+							<dd>전화번호 : 031-622-7599 </dd>
+							<dd>운영시간 : 오전 10:00 ~ 오후 10:30 </dd>
+						</dl>
+							<dl class="tmap4">
+							<dt>하겐다즈 분당미금점</dt>
+							<dd>주소 : 경기 성남시 분당구 돌마로 43 메디파크 1층 101호 </dd>
+							<dd>전화번호 : 031-711-2220 </dd>
+							<dd>운영시간 : 10:00 ~ 24:00 </dd>
+						</dl>			
+						<dl class="tmap5">
+							<dt>하겐다즈 아주대병원점</dt>
+							<dd>주소 : 경기도 수원시 영통구 원천동 월드컵로 164 </dd>
+							<dd>전화번호 : 031-212-8211 </dd>
+							<dd>운영시간 : 오전7:00 ~ 오후8:00 </dd>
+						</dl>									
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+            <!-- 상단 footer 라인-->
+            <div class="f_top">
+                <div class="ftop_text">
+                    <p> <a href="#">공지사항&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이벤트&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">매장안내&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">고객센터</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 가운데 footer 콘텐츠 -->
+            <div class="f_wrap">
+                <!-- footer 로고 이미지 -->
+                <img src="img/logotwo.png" alt="하겐다즈 로고">
+
+                <div class="f_textL">
+                    <p>한국하겐-다즈(주) 대표 : 김미조</p>
+                    <p>주소 : 서울특별시 강남구 테헤란로311 [역삼동, 아남타워 6층] | 개인정보관리책임자 : 김미조대표 <br>
+                        통신판매신고 : 강남-8166 | 대표전화 : 02-508-8500 | 사업자등록번호 : 106-81-28964
+                    </p>
+
+                    <p> 주식회사 에스와이피글로벌 대표 : 김광용[사업자정보확인] </p>
+                    <p>주소 : 서울특별시 강남구 봉은사로112길 26, 5층 502호[삼성동, 한호빌딩]<br>
+                        사업자등록번호 : 262-88-00829 | 통신판매신고 : 2018-서울강남-00403<br>
+                        Email : cs@unitoa.com | 개인정보관리책임자 : 조현정 | 대표전화 : 070-7549-7020
+                    </p>
+                </div>
+
+                <div class="f_textR">
+                    <p> 하겐다즈 고객만족센터</p>
+                    <p> 070-7549-7020</p>
+                    <p>*고객센터 운영시간 : 평일 10:00 ~ 17:00 <br>
+                        (점심시간 12:00 ~ 13:00)
+                    </p>
+                    <p> 하겐다즈몰 판매운영대행 : 주식회사 에스와이피 글로벌</p>
+                </div>
+            </div>
+
+
+            <div class="f_bottom">
+                <div class="fbot_text">
+                    <p> capyright @ 2021 Haagen-Dazs Korea. All Right Reserved.</p>
+                    <p> <a href="#">개인정보 처리방침 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이용약관 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이메일 무단수집거부</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+		<!-- 스크립트 연결 -->
+		<script>
+
+			$(function(){
+				$('.tmap1').click(function(){
+				$('.map').animate({
+					top : '0'
+				},0)
+			});
+				
+				$('.tmap2').click(function(){
+				$('.map').animate({
+					top : '-485px'
+				},0)
+			});
+				
+				$('.tmap3').click(function(){
+				$('.map').animate({
+					top : '-970px'
+				},0)
+			});	
+				
+			$('.tmap4').click(function(){
+				$('.map').animate({
+					top : '-1455px'
+				},0)
+			});	
+				
+			$('.tmap5').click(function(){
+				$('.map').animate({
+					top : '-1940px'
+				},0)
+			});	
+				
+			});
+
+
+
+		</script>
+		<script src="/js/header.js"></script>
+	</div>
+</body></html>

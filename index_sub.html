@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Haagen-Dazs sub page</title>
+               <!-- 제이쿼리 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+           <!-- 페이지 css-->
+            <link rel="stylesheet" href="/css/index_sub.css" type="text/css">
+            <!-- 리셋 css -->
+            <link rel="stylesheet" href="css/commen/reset.css" type="text/css">
+            <!-- 헤더 푸터 css -->
+            <link rel="stylesheet" href="css/header_footer.css" type="text/css">
+            <!-- 미디어쿼리 헤더 푸터 css  -->
+            <link rel="stylesheet" href="css/media.css" type="text/css">
+    </head>
+    
+    <body>
+        <div id="wrap">  
+      		<header>
+			<!-- 모바일버전  헤더 -->
+			<div class="m_header">
+			<!-- 하겐다즈 로고 -->
+				<a href="index.html" class="m_logo">
+					<img src="img/logo.png" alt=" 하겐다즈 로고">
+				</a>
+			<!-- 햄버거 버튼-->	
+				<a href="#" class="m_menu">
+				 <img src="img/ham.png" alt="모바일 메뉴버튼"> 
+				 </a>
+			<!-- 메뉴 -->	 
+				<div class="m_nav">
+					<p>HAAGEN DAZS</p>
+					<img class="m_close" src="img/close.png" alt="메뉴 닫기">
+					<p class="m_line"></p>
+					<ul class="m_subUl">
+						<li class="mobile1"><a href="#">MENU</a>
+							<ul class="m_submenu1">
+								<li><a href="index_sub.html">신메뉴</a></li>
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li class="mobile2"><a href="#">BRAND</a>
+							<ul class="m_submenu2">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li class="mobile3"><a href="#">EVENT</a>
+							<ul class="m_submenu3">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<li class="mobile4"><a href="#">STORE</a>
+							<ul class="m_submenu4">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="#" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li class="mobile5"><a href="#">ABOUT</a>
+							<ul class="m_submenu5">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div>
+						<a href="index_login.html">LOGIN</a>
+						<a href="#">SIGN UP</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- 헤더 오른쪽 박스 wrap -->
+			<div class="header_R">
+				<ul>
+					<li><a href="index_login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">SNS연동</a></li>
+					<li class="h_facebook">
+					<a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"></a>
+					</li>
+					<li class="h_insta">
+					<a href="https://www.instagram.com/haagendazskorea/?hl=ko" target="_blank"></a>
+					</li>
+					<li class="h_youtube">
+					<a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- nav (서브메뉴 뒷 배경위한 wrap) -->
+			<div class="mainWrap">
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="index_sub.html">메뉴</a>
+							<ul class="subMenu">
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li><a href="brand.html">브랜드</a>
+							<ul class="subMenu">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li><a href="membership.html">이벤트</a>
+							<ul class="subMenu">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<!-- 로고 -->
+						<li class="logo"><a href="index.html">
+								<img src="img/logo.png" alt=" 하겐다즈 로고"></a>
+						</li>
+						<li><a href="store.html">매장소개</a>
+							<ul class="subMenu">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li><a href="#">고객센터</a>
+							<ul class="subMenu">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="#">온라인 구매</a>
+							<ul class="subMenu">
+								<li><a href="https://haagendazs-store.co.kr/" target="_blank">공홈 구매</a></li>
+								<li><a href="https://smartstore.naver.com/haagendazstore" target="_blank">
+										네이버 구매
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+            
+            <!-- 콘텐츠 메뉴 -->
+            <div id="main_menu">
+                <div class="main_text">
+                    <h1> Haagen-Dazs Menu</h1>
+                    <h3> 사랑하는 사람들과 함께 , 
+                    소중한 나에게 선사하는 달달함, 하겐다즈</h3>
+                    <p></p>
+                </div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="index_sub.html">NEW</a></li>
+                    <li><a href="pint.html">파인트</a></li>
+                    <li><a href="minicup.html">미니컵</a></li>
+                    <li><a href="stick.html">스틱바/샌드</a></li>
+                    <li><a href="bulk.html">콘/벌크</a></li>
+                    <li><a href="dessert.html">디저트/굿즈</a></li>
+                </ul>
+                </div>
+                
+            </div>
+            
+            
+            <!-- 서브페이지 메인콘텐츠 -->
+            <div class="main_content">
+               <!-- 왼쪽 배경색 -->
+                <div class="leftcolor"></div>
+
+                <div class="ice_wrap">
+                <div class="left_img">
+                   <a href="https://haagendazs-store.co.kr/product/detail.html?product_no=116&cate_no=32&display_group=1"> 
+                       <img src="img/twista.png"  alt="트위스트크런치바닐라"> 
+                    <p>VANILLA▶</p>
+                    </a>
+                </div>
+                <div class="contents_text">
+                    <h3>NEW BEST</h3>
+                    <p class="f_size"> 두가지 맛 아이스크림의 만남</p>
+                    <p>진한 초콜릿 스월&amp;크런치 초콜릿 칩
+                    <br>입 안 가득 퍼지는 진한 초콜릿 스월과 초콜릿 칩이 가득! <br> 
+                    심심할 틈이없는 초콜릿의 신세계</p>
+                </div>
+                <div class="right_img">
+                    <a href="https://haagendazs-store.co.kr/product/detail.html?product_no=115&cate_no=1&display_group=2">
+                        <img src="img/twistb.png" alt="트위스트크런치딸기">
+                        <p> STRAWBERRY▶</p>
+                    </a>
+                </div>
+             </div>
+             <!-- 오른쪽 배경색 -->
+                <div class="rightcolor"></div>
+         </div>
+            
+            <!-- 메뉴 콘텐츠 -->
+            
+            <!-- 콘텐츠 상단 라인 -->
+            <div class="line">
+                <ul>
+                    <li></li>
+                    <li> <a href="pint.html"><p class="t_d">파인트</p>
+                            <p>MORE▶</p>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li><a href="minicup.html"><p  class="t_d">미니컵</p>
+                            <p>MORE▶</p></a></li>
+                    <li></li>
+                </ul>
+            </div>
+           
+          
+           
+            <!-- 컵 메뉴 -->        
+            <div class="menu_wrap">
+             <!-- 파인트 모바일 라인 -->
+           <div class="mobile_line">
+           	<p></p>
+			   <p><a href="pint.html">파인트 MORE▶</a></p>
+           	<p></p>
+           </div>  
+           <!-- 파인트 모바일 라인 -->
+                <div class="cup1">
+                    <div class="cupimg">
+                    <img src="img/s_ice2.png" alt="스트로베리 치즈케이크">
+                        </div>
+                    <p>STRAWBERRY CHEESE<br>
+                        스트로베리 치즈케이크</p>
+                </div>
+                <div class="cup1">
+                    <div class="cupimg">
+                     <img src="img/s_ice1.png" alt="마카다미아 넛">
+                        </div>
+                    <p>MACADAMIA NUT<br>
+                        마카다미아 넛</p>
+                </div>
+                
+            <!-- 미니컵 모바일 라인 -->
+           <div class="mobile_line">
+           	<p></p>
+			   <p><a href="minicup.html">미니컵 MORE▶</a></p>
+           	<p></p>
+           </div> 
+            <!-- 미니컵 모바일 라인 -->
+               
+                <div class="cup1">
+                    <div class="cupimg2">
+                        <img src="img/s_minicub2.png" alt="칸탈로프 멜론"></div>
+                <p>CANTALOUPE MELON<br>
+                    칸탈로프 멜론</p>
+                </div>
+                <div class="cup1">
+                    <div class="cupimg2">
+                 <img src="img/s_minicub1.png" alt="화이트피치와라즈베리"></div>
+                <p>PEACH&amp;RASPBERRY<br>
+                    화이트 피치&amp;라즈베리</p>
+                </div>
+            </div>
+            
+            <!--  스틱바 라인 -->
+            <div class="line">
+                <ul>
+                    <li></li>
+                    <li> <a href="stick.html"><p class="t_d">스틱바</p>
+                            <p>MORE▶</p>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li><a href="#"><p  class="t_d">콘</p>
+                            <p>MORE▶</p></a></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+                      
+            
+            <!-- 스틱바 메뉴 -->
+               <div class="menu_wrap">
+           <!-- 스틱바 모바일 라인 -->
+           <div class="mobile_line">
+           	<p></p>
+			   <p><a href="stick.html">스틱바 MORE▶</a></p>
+           	<p></p>
+           </div>  
+           <!-- 스틱바 모바일 라인 -->
+               
+                <div class="stick1">
+                    <div class="stickimg">
+                    <img src="img/strowberries.png" alt="딸기와크림 스틱바">
+                        </div>
+                    <p>STROWBERIES&amp;CREAM<br>
+                        딸기와 크림</p>
+                </div>
+                <div class="stick1">
+                    <div class="stickimg">
+                     <img src="img/greentea.png" alt="그린티아몬드 스틱바">
+                        </div>
+                    <p>GREEN TEA&amp;ALMONE<br>
+                        그린티 아몬드</p>
+                </div>
+                
+          <!-- 콘 모바일 라인 -->
+           <div class="mobile_line">
+           	<p></p>
+			   <p><a href="bulk.html">콘 MORE▶</a></p>
+           	<p></p>
+           </div>  
+           <!-- 콘 모바일 라인 -->
+               
+               
+                <div class="stick1">
+                    <div class="stickimg2">
+                        <img src="img/s_con.png" alt="초코칩아몬드 콘"></div>
+                <p>CHOCO CHOC ALMONE
+                        <br>
+                    초코칩 아몬드</p>
+                </div>
+                <div class="stick1">
+                    <div class="stickimg2">
+                 <img src="img/s_con2.png" alt="바닐라카라멜 콘"></div>
+                <p>VANILLA CARAMEL<br>
+                    바닐라 카라멜 아몬드</p>
+                </div>
+            </div>
+            
+            <!-- 케이크 라인 -->
+              <div class="line">
+                <ul>
+                    <li></li>
+                    <li> <a href="dessert.html"><p class="t_d">케이크</p>
+                            <p>MORE▶</p>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li><a href="#"><p  class="t_d">벌크</p>
+                            <p>MORE▶</p></a></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+            
+            <!-- 케이크 메뉴 -->
+            <div class="menu_wrap">
+            <!-- 케이크 모바일 라인 -->
+           <div class="mobile_line">
+           	<p></p>
+			   <p><a href="dessert.html">케이크 MORE▶</a></p>
+           	<p></p>
+           </div>  
+           <!-- 케이크 모바일 라인 -->
+               
+                <div class="cake1">
+                    <div class="cakeimg">
+                    <img src="img/cake1.png" alt="미니블랑 바닐라와 벨지안초코 케이크">
+                        </div>
+                    <p>ICE CREAM CAKE<br>미니블랑 바닐라&amp;초코</p>
+                </div>
+                <div class="cake1">
+                    <div class="cakeimg">
+                     <img src="img/cake2.png" alt="비욘드쇼콜라 초콜라와 쿠키앤크림 케이크">
+                        </div>
+                    <p>ICE CREAM CAKE<br>
+				비욘드 초콜릿&amp;쿠키앤크림</p>
+                </div>
+                
+               <!-- 벌크 모바일 라인 -->
+           <div class="mobile_line">
+           	<p></p>
+			   <p><a href="bulk.html">벌크 MORE▶</a></p>
+           	<p></p>
+           </div>  
+           <!-- 벌크 모바일 라인 -->
+               
+               
+                <div class="cake1">
+                    <div class="cakeimg2">
+                        <img src="img/pack1.png" alt="바닐라 벌크">
+                       </div>
+                <p>VANILLA
+                    <br>바닐라 벌크</p>
+                </div>
+                <div class="cake1">
+                    <div class="cakeimg2">
+                 <img src="img/pack2.png" alt="쿠키앤크림 벌크"></div>
+                <p>COOKIES &amp; CREAM<br>
+                    쿠키앤크림 벌크</p>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+                
+        <footer id="footer">
+            <!-- 상단 footer 라인-->
+            <div class="f_top">
+                <div class="ftop_text">
+                    <p> <a href="#">공지사항&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이벤트&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">매장안내&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">고객센터</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 가운데 footer 콘텐츠 -->
+            <div class="f_wrap">
+                <!-- footer 로고 이미지 -->
+                <img src="img/logotwo.png" alt="하겐다즈 로고">
+
+                <div class="f_textL">
+                    <p>한국하겐-다즈(주) 대표 : 김미조</p>
+                    <p>주소 : 서울특별시 강남구 테헤란로311 [역삼동, 아남타워 6층] | 개인정보관리책임자 : 김미조대표 <br>
+                        통신판매신고 : 강남-8166 | 대표전화 : 02-508-8500 | 사업자등록번호 : 106-81-28964
+                    </p>
+
+                    <p> 주식회사 에스와이피글로벌 대표 : 김광용[사업자정보확인] </p>
+                    <p>주소 : 서울특별시 강남구 봉은사로112길 26, 5층 502호[삼성동, 한호빌딩]<br>
+                        사업자등록번호 : 262-88-00829 | 통신판매신고 : 2018-서울강남-00403<br>
+                        Email : cs@unitoa.com | 개인정보관리책임자 : 조현정 | 대표전화 : 070-7549-7020
+                    </p>
+                </div>
+
+                <div class="f_textR">
+                    <p> 하겐다즈 고객만족센터</p>
+                    <p> 070-7549-7020</p>
+                    <p>*고객센터 운영시간 : 평일 10:00 ~ 17:00 <br>
+                        (점심시간 12:00 ~ 13:00)
+                    </p>
+                    <p> 하겐다즈몰 판매운영대행 : 주식회사 에스와이피 글로벌</p>
+                </div>
+            </div>
+
+
+            <div class="f_bottom">
+                <div class="fbot_text">
+                    <p> capyright @ 2021 Haagen-Dazs Korea. All Right Reserved.</p>
+                    <p> <a href="#">개인정보 처리방침 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이용약관 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이메일 무단수집거부</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+           
+    <!-- 스크립트 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                       <!-- 헤더 js -->
+               <script src="/js/header.js"></script>   
+            
+        
+        </div>
+    </body>
+</html>

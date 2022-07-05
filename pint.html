@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haagen-Dazs 파인트</title>
+        <!-- 제이쿼리 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 페이지 css -->
+    <link rel="stylesheet" href="/css/pint.css" type="text/css">
+    <!-- 리셋 css -->
+    <link rel="stylesheet" href="/css/commen/reset.css" type="text/css">
+            <!-- 헤더 푸터 css -->
+            <link rel="stylesheet" href="css/header_footer.css" type="text/css">
+            <!-- 미디어쿼리 css  -->
+            <link rel="stylesheet" href="css/media.css" type="text/css">
+</head>
+<body>
+<div id="wrap">
+		<header>
+			<!-- 모바일버전  헤더 -->
+			<div class="m_header">
+			<!-- 하겐다즈 로고 -->
+				<a href="index.html" class="m_logo">
+					<img src="img/logo.png" alt=" 하겐다즈 로고">
+				</a>
+			<!-- 햄버거 버튼-->	
+				<a href="#" class="m_menu">
+				 <img src="img/ham.png" alt="모바일 메뉴버튼"> 
+				 </a>
+			<!-- 메뉴 -->	 
+				<div class="m_nav">
+					<p>HAAGEN DAZS</p>
+					<img class="m_close" src="img/close.png" alt="메뉴 닫기">
+					<p class="m_line"></p>
+					<ul class="m_subUl">
+						<li class="mobile1"><a href="#">MENU</a>
+							<ul class="m_submenu1">
+								<li><a href="index_sub.html">신메뉴</a></li>
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li class="mobile2"><a href="#">BRAND</a>
+							<ul class="m_submenu2">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li class="mobile3"><a href="#">EVENT</a>
+							<ul class="m_submenu3">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<li class="mobile4"><a href="#">STORE</a>
+							<ul class="m_submenu4">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="#" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li class="mobile5"><a href="#">ABOUT</a>
+							<ul class="m_submenu5">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div>
+						<a href="index_login.html">LOGIN</a>
+						<a href="#">SIGN UP</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- 헤더 오른쪽 박스 wrap -->
+			<div class="header_R">
+				<ul>
+					<li><a href="index_login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">SNS연동</a></li>
+					<li class="h_facebook">
+					<a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"></a>
+					</li>
+					<li class="h_insta">
+					<a href="https://www.instagram.com/haagendazskorea/?hl=ko" target="_blank"></a>
+					</li>
+					<li class="h_youtube">
+					<a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- nav (서브메뉴 뒷 배경위한 wrap) -->
+			<div class="mainWrap">
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="index_sub.html">메뉴</a>
+							<ul class="subMenu">
+								<li><a href="pint.html">파인트</a></li>
+								<li><a href="minicup.html">미니컵</a></li>
+								<li><a href="stick.html">스틱바/샌드</a></li>
+								<li><a href="bulk.html">콘/벌크</a></li>
+								<li><a href="dessert.html">디저트/굿즈</a></li>
+							</ul>
+						</li>
+						<li><a href="brand.html">브랜드</a>
+							<ul class="subMenu">
+								<li><a href="brand.html">브랜드 스토리</a></li>
+								<li><a href="rawmaterial.html">하겐다즈 원료</a></li>
+							</ul>
+						</li>
+						<li><a href="membership.html">이벤트</a>
+							<ul class="subMenu">
+								<li><a href="membership.html">멤버쉽 가입 혜택</a></li>
+								<li><a href="#" class="pageAlert">이벤트</a></li>
+							</ul>
+						</li>
+						<!-- 로고 -->
+						<li class="logo"><a href="index.html">
+								<img src="img/logo.png" alt=" 하겐다즈 로고"></a>
+						</li>
+						<li><a href="store.html">매장소개</a>
+							<ul class="subMenu">
+								<li><a href="store.html">매장소개</a></li>
+								<li><a href="" class="pageAlert">업소문의</a></li>
+							</ul>
+						</li>
+						<li><a href="#">고객센터</a>
+							<ul class="subMenu">
+								<li><a href="#" class="pageAlert">고객센터</a></li>
+								<li><a href="#" class="pageAlert">공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="#">온라인 구매</a>
+							<ul class="subMenu">
+								<li><a href="https://haagendazs-store.co.kr/" target="_blank">공홈 구매</a></li>
+								<li><a href="https://smartstore.naver.com/haagendazstore" target="_blank">
+										네이버 구매
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+            <!-- 콘텐츠 메뉴 -->
+            <div id="main_menu">
+                <div class="main_text">
+                    <h1> Haagen-Dazs 파인트</h1>
+                    <h3> 사랑하는 사람들과 함께 즐기기 좋은 파인트 아이스크림입니다.</h3>
+                    <p></p>
+                </div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="index_sub.html">NEW</a></li>
+                    <li><a href="pint.html">파인트</a></li>
+                    <li><a href="minicup.html">미니컵</a></li>
+                    <li><a href="stick.html">스틱바/샌드</a></li>
+                    <li><a href="bulk.html">콘/벌크</a></li>
+                    <li><a href="dessert.html">디저트/굿즈</a></li>
+                </ul>
+                </div>
+                
+            </div>
+ <!-- 메뉴 콘텐츠 -->
+            
+            <!-- NEW 상단 라인 -->
+            <div class="line">
+                <ul>
+                    <li></li>
+                    <li> <p class="n_d"> NEW MENU </p>
+                         <p>파인트 신메뉴</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+            
+            <!-- NEW 메뉴 -->
+
+            <div class="new_wrap">
+                <div class="new_pint">
+                    <div class="newimg">
+                    <img src="img/p_twiststrow.png" alt="아이스크림">
+                    </div>
+                    <p>TWIST &amp; CHRUNCH<br>
+                        벨지안 초코 &amp; 딸기</p>
+                </div>
+                <div class="new_pint">
+                    <div class="newimg">
+                     <img src="img/p_twistvanlla.png" alt="아이스크림">
+                     </div>
+                    <p>TWIST &amp; CHRUNCH<br>
+                        벨지안 초코 &amp; 바닐라</p>
+                </div>
+                <div class="new_pint">
+                    <div class="newimg p1">
+                    <img src="img/p_salted.png" alt="아이스크림"></div>
+                    <p>CARAMEL CAPPUCCINO<br>
+                       솔티드 카라멜 카푸치노</p>
+                </div>
+                <div class="new_pint">
+                    <div class="newimg p1">
+                    <img src="img/p_vanllapecan.png" alt="아이스크림"></div>
+                    <p>VANLLA PECAN<br>
+                     바닐라 피칸</p>
+                </div>
+            </div>
+
+
+               <!-- SPECIAL 상단 라인 -->
+               <div class="line">
+                <ul>
+                    <li></li>
+                    <li> <p class="n_d">SPECIAL PINT</p>
+                        <p>특별한 맛 파인트</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        
+            <div class="pint_wrap">
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_pinacolada.png" alt="아이스크림">
+                    </div>
+                    <p>COCKTAL<br>
+                       피나콜라다 코코넛</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                     <img src="img/p_lime.png" alt="아이스크림">
+                     </div>
+                    <p>COCKTAIL<br>
+                        라임 모히또 소르베</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_yogurtstrow.png" alt="아이스크림"></div>
+                    <p>YOGURT<br>
+                       딸기 요거트</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_kiwi.png" alt="아이스크림"></div>
+                    <p>YOGURT<br>
+                     키위 &amp; 망고 요거트</p>
+                </div>
+            </div>
+
+
+                
+            <!-- SPECIAL 메뉴2 -->
+
+            <div class="pint_wrap">
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/s_ice2.png" alt="아이스크림">
+                    </div>
+                    <p>STRAWBERRY CHEESECAKE<br>
+                        딸기 치즈 케이크</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                     <img src="img/s_ice1.png" alt="아이스크림">
+                     </div>
+                    <p>MACADAMIA NUT<br>
+                        마카다미아 넛</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_darkchocolate.png" alt="아이스크림"></div>
+                    <p>CHOCOLATE &amp; ALMONE <br>
+                        다크 초콜릿 가나슈 아몬드</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_brownie.png" alt="아이스크림"></div>
+                    <p>BROWNIE MACCHIATO <br>
+                        브라우니 마끼야또</p>
+                </div>
+            </div>
+
+                    
+            <!-- SPECIAL 메뉴3 -->
+
+            <div class="pint_wrap p_margin">
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_belgian.png" alt="아이스크림">
+                    </div>
+                    <p>CHOCOLATE &amp; HAZELNUT <br>
+                        벨지안 초코 &amp; 헤이즐넛</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                     <img src="img/p_cantaloupe.png" alt="아이스크림">
+                     </div>
+                    <p>CANTALOUPE MELON <br>
+                        칸탈로프 멜론</p>
+                </div>
+                <div class="pint s_margin">
+                    <div class="pintimg">
+                    <img src="img/p_peanut.png" alt="아이스크림"></div>
+                    <p>PEANUT BUTTER CRUNCH <br>
+                        피넛버터 크런치</p>
+                </div>
+                <div class="pint s_margin">
+                    <div class="pintimg">
+                    <img src="img/p_mango.png" alt="아이스크림"></div>
+                    <p>MANGO &amp; CREAM <br>
+                        망고와 크림</p>
+                </div>
+            </div>
+
+              <!-- ORIGINAL 상단 라인 -->
+              <div class="line">
+                <ul>
+                    <li></li>
+                    <li> <p class="n_d">ORIGINAL PINT</p>
+                            <p>하겐다즈 기본 파인트</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        
+            <div class="pint_wrap">
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_vanilla.png" alt="아이스크림">
+                    </div>
+                    <p>VANILLA<br>
+                       바닐라</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                     <img src="img/p_chocolate.png" alt="아이스크림">
+                     </div>
+                    <p>CHOCOLATE<br>
+                        초콜릿</p>
+                </div>
+                <div class="pint clear">
+                    <div class="pintimg">
+                    <img src="img/p_greentea.png" alt="아이스크림"></div>
+                    <p>GREEN TEA<br>
+                       그린티 녹차</p>
+                </div>
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_strowberry.png" alt="아이스크림"></div>
+                    <p>STROWBERRY<br>
+                     딸기</p>
+                </div>
+            </div>
+            <!-- 쿠키앤크림 -->
+            <div class="pint_wrap">
+                <div class="pint">
+                    <div class="pintimg">
+                    <img src="img/p_cookiescream.png" alt="아이스크림">
+                    </div>
+                    <p>COOKIES &amp; CREAM<br>
+                       쿠키앤크림</p>
+                </div>
+            </div>
+
+            <footer id="footer">
+            <!-- 상단 footer 라인-->
+            <div class="f_top">
+                <div class="ftop_text">
+                    <p> <a href="#">공지사항&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이벤트&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">매장안내&nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">고객센터</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 가운데 footer 콘텐츠 -->
+            <div class="f_wrap">
+                <!-- footer 로고 이미지 -->
+                <img src="img/logotwo.png" alt="하겐다즈 로고">
+
+                <div class="f_textL">
+                    <p>한국하겐-다즈(주) 대표 : 김미조</p>
+                    <p>주소 : 서울특별시 강남구 테헤란로311 [역삼동, 아남타워 6층] | 개인정보관리책임자 : 김미조대표 <br>
+                        통신판매신고 : 강남-8166 | 대표전화 : 02-508-8500 | 사업자등록번호 : 106-81-28964
+                    </p>
+
+                    <p> 주식회사 에스와이피글로벌 대표 : 김광용[사업자정보확인] </p>
+                    <p>주소 : 서울특별시 강남구 봉은사로112길 26, 5층 502호[삼성동, 한호빌딩]<br>
+                        사업자등록번호 : 262-88-00829 | 통신판매신고 : 2018-서울강남-00403<br>
+                        Email : cs@unitoa.com | 개인정보관리책임자 : 조현정 | 대표전화 : 070-7549-7020
+                    </p>
+                </div>
+
+                <div class="f_textR">
+                    <p> 하겐다즈 고객만족센터</p>
+                    <p> 070-7549-7020</p>
+                    <p>*고객센터 운영시간 : 평일 10:00 ~ 17:00 <br>
+                        (점심시간 12:00 ~ 13:00)
+                    </p>
+                    <p> 하겐다즈몰 판매운영대행 : 주식회사 에스와이피 글로벌</p>
+                </div>
+            </div>
+
+
+            <div class="f_bottom">
+                <div class="fbot_text">
+                    <p> capyright @ 2021 Haagen-Dazs Korea. All Right Reserved.</p>
+                    <p> <a href="#">개인정보 처리방침 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이용약관 &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+                        <a href="#">이메일 무단수집거부</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- 스크립트 연결 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/js/header.js"></script>  
+
+
+
+
+
+
+</div>
+</body>
+</html>
