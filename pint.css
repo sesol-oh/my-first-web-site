@@ -1,0 +1,472 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap{
+    width: 100%; 
+    overflow: hidden;
+}
+a:hover{
+    color:#b1b1b1;
+    cursor: pointer;
+}
+
+/* 콘텐츠 메뉴 */
+#main_menu{
+    width: 74%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* 서브텍스트 */
+.main_text h1,h3{
+    color: #370818;
+    font-family: 'Dolbomche_R';
+}
+.main_text>h1{
+	font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+.main_text>h3{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+.main_text>p{
+    border-bottom: 3px solid #370818;
+    margin-bottom: 20px;
+}
+
+/* 콘텐츠 메뉴 gnb*/
+.gnb{
+    width: 99%;
+    margin: 0 auto;
+}
+.gnb>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb li a{
+    font-family: 'Dolbomche_R';
+    font-size: 1.3em;
+}
+.gnb li:nth-child(2){
+    font-weight: 900;
+}
+
+
+/* 메뉴 콘텐츠 */
+
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 73%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.line>ul{
+    width: 48%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.line li:first-child{
+    width: 25%;
+    border-bottom: 1px solid #370818;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 2.2em;
+    text-align: center;
+    font-family: 'Dolbomche_b';
+	color: #370818;
+	white-space: nowrap;
+}
+.n_d+p{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Dolbomche_b';
+	color: #370818;
+    margin-top: 5px;
+}
+
+.line li:nth-child(3){
+    width: 25%;
+    border-bottom: 1px solid #370818;
+}
+
+/* new 메뉴 */
+.new_wrap{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+}
+.new_pint p{
+    font-family: 'Dolbomche_b';
+    font-size: 1.1em;
+	color: #370818;
+	line-height: 26px;
+    margin-top: 20px;
+	white-space: nowrap;
+}
+.newimg>img{
+    width: 85%;
+}
+
+
+
+/* 파인트 메뉴 */
+.pint_wrap{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6%;
+}
+.pint p{
+    font-family: 'Dolbomche_b';
+    font-size: 1.1em;
+	color: #370818;
+	line-height: 26px;
+    margin-top: 20px;
+}
+.pintimg img{
+    width: 85%;
+}
+.p_margin{
+    margin-bottom: 0;
+}
+
+
+
+
+/* 반응형 웹 */
+
+/* 모바일 */
+@media all and (max-width:768px) { 
+
+/* 콘텐츠 메뉴 */
+#main_menu{
+    width: 90%;
+}
+/* 서브텍스트 */
+.main_text>h1{
+	font-size: 1.2rem;
+    margin-bottom: 10px;
+	 font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.main_text>h3{
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+	font-weight: 900;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.main_text>p{
+    border-bottom: 2px solid #370818;
+    margin-bottom: 10px;
+}
+
+/* 콘텐츠 메뉴 gnb*/
+.gnb{
+    width: 99%;
+    margin-bottom: 10px;
+}
+.gnb li a{
+    font-size: 0.8em;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.gnb li:nth-child(2)>a{
+		color: #949494;
+}	
+
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 90%;
+}
+.line>ul{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.line li:first-child,
+.line li:nth-child(3){
+    width: 23%;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 1.1em;
+	 font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.n_d+p{
+    margin-top: 3px;
+	font: bold 0.75em / 20px 'NEXON Lv1 Gothic OTF Light';
+}
+	
+	
+/* new 메뉴 */
+.new_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.new_pint{
+	width: 50%;	
+	float: left;
+}
+.new_pint:first-child,
+.new_pint:nth-of-type(2){
+	margin-bottom: 30px;
+}
+.new_pint p{
+    font-size: 0.7em;
+	line-height: 18px;
+    margin-top: 10px;
+	 font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.newimg>img{
+    width: 60%;
+}
+
+	/* 파인트 메뉴 */
+.pint_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+    margin-bottom: 0%;
+	clear: both;
+}
+.pint{
+	width: 50%;	
+	float: left;
+	margin-bottom: 35px;
+}
+.pint p{
+    font-size: 0.7em;
+	line-height: 18px;
+    margin-top: 10px;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.pintimg img{
+    width: 60%;
+}
+.p_margin{
+    margin-bottom: 0;
+}
+.clear{
+	clear: both;		
+}
+.s_margin{
+		margin-bottom: 0;
+}	
+	
+}
+
+/* 태블릿 사이즈*/
+@media all and (min-width:769px) and (max-width:1024px) {
+	/* 콘텐츠 메뉴 */
+#main_menu{
+    width: 95%;
+}
+/* 서브텍스트 */
+.main_text>h1{
+	font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+.main_text>h3{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.main_text>p{
+    margin-bottom: 15px;
+}
+
+/* 콘텐츠 메뉴 gnb*/
+.gnb{
+    width: 99%;
+}
+.gnb li a{
+    font-size: 1.4em;
+}
+	
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 95%;
+}
+.line>ul{
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.line li:first-child,
+.line li:nth-child(3){
+    width: 20%;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 2em;
+}
+.n_d+p{
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* new 메뉴 */
+.new_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.new_pint{
+	width: 50%;	
+	float: left;
+}
+.new_pint:first-child,
+.new_pint:nth-of-type(2){
+	margin-bottom: 50px;
+}
+.new_pint p{
+    font-size: 1.35em;
+	line-height: 30px;
+    margin-top: 15px;
+}
+.newimg>img{
+    width: 55%;
+}	
+	
+/* 파인트 메뉴 */
+.pint_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+    margin-bottom: 0%;
+	clear: both;
+}
+.pint{
+	width: 50%;	
+	float: left;
+	margin-bottom: 50px;
+}
+.pint p{
+    font-size: 1.35em;
+	line-height: 30px;
+    margin-top: 15px;
+}
+.pintimg img{
+    width: 55%;
+}
+.p_margin{
+    margin-bottom: 0;
+}
+.clear{
+	clear: both;		
+}
+.s_margin{
+		margin-bottom: 0;
+}		
+}
+
+
+/* 노트북 사이즈*/
+@media all and (min-width:1025px) and (max-width:1520px) { 
+ 
+/* 콘텐츠 메뉴 */
+#main_menu{
+	padding-left: 20px;
+}
+.main_text>h1{
+	font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+.main_text>h3{
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+}
+.main_text>p{
+    border-bottom: 2px solid #370818;
+    margin-bottom: 10px;
+}
+
+/* 콘텐츠 메뉴 gnb*/	
+.gnb li a{
+    font-size: 0.9em;
+}	
+	
+/* 메뉴 콘텐츠 */
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 73%;
+}
+.line>ul{
+    width: 48%;
+}
+.line li:first-child{
+    width: 25%;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 1.4em;
+}
+.n_d+p{
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+.new_wrap{
+		width: 78%;
+}
+.new_pint p{
+    font-size: 0.8em;
+	line-height: 20px;
+    margin-top: 20px;
+}
+.newimg>img{
+    width: 55%;
+}
+/* 파인트 메뉴 */
+.pint_wrap{
+	width: 78%;
+    margin-bottom: 3%;
+}
+.pint p{
+    font-size: 0.8em;
+	line-height: 20px;
+    margin-top: 20px;
+}
+.pintimg img{
+    width: 55%;
+}
+.p_margin{
+    margin-bottom: 0;
+}
+	
+}
+
+

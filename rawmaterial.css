@@ -1,0 +1,468 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#wrap{
+    width: 100%;
+    overflow: hidden;
+}
+a:hover{
+    color:#ececec;
+    cursor: pointer;
+}
+
+/* 콘텐츠  영역 */
+
+/* 폰트 색상 지정 */
+h1,h2,h3,p,li{
+    font-family: 'Dolbomche_R';
+    color: #370818;
+}
+
+/* 상단 텍스트 */
+.rowtext{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.rowtext>h1{
+    font-size: 2.7em;
+    margin-bottom: 15px;
+}
+section{
+    width: 100%;
+    overflow: hidden;
+}
+.br_mo{
+	display: none;
+}
+
+/* 클릭시 페이지 변경 구현 */
+input[type="radio"]{
+    display: none;
+}
+
+/* 상단 박스 지정 */
+.box1{
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin: 0 auto;
+}
+/* 소개 콘텐츠 박스 */
+.con_set{
+    width: 65%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* 콘텐츠 텍스트 */
+.vcon_text{
+    width: 53%;
+    text-align: center;
+	white-space: nowrap;
+}
+.vcon_text>h2{
+    font-size: 2.7em;
+    margin-bottom: 40px;
+}
+.vcon_text>h3{
+    font-size: 1.4em;
+    margin-bottom: 25px;
+}
+.vcon_text>p{
+    font-size: 1.15em;
+    line-height: 35px;
+    font-weight: 900;
+}
+.vcon_img{
+	width: 24%;
+}
+.vcon_img>img{
+	width: 100%;
+}
+
+/* 이미지 클릭시 콘텐츠 변경*/
+.vcon2{
+    width: 73%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.btn1{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.vcon2 img{
+    width: 85%;
+}
+
+label[for*="tab"]{
+    cursor: pointer;
+}
+
+/* 콘텐츠 박스 check시 보이게 설정 */
+input[id="tab01"]:checked ~ .vcon1{
+    display: block;
+}
+input[id="tab02"]:checked ~ .scon2{
+    display: block;
+}
+input[id="tab03"]:checked ~ .ccon3{
+    display: block;
+}
+input[id="tab04"]:checked ~ .mcon4{
+    display: block;
+}
+
+/*컬러 박스 설정*/
+.box2{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    bottom: 95px;
+    z-index: -9;
+    margin-bottom: 30px;
+}
+.box2 img{
+	width: 100%;
+}
+
+/*  하단 텍스트 설정 */
+.box3{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 60px;
+    display: none;
+	padding-bottom: 4%;
+}
+.box3 p{
+    font-weight: 900;
+}
+
+#bottom1{
+    background-image: url(/img/raw_vanillabg2.png);
+    background-size: cover;
+    background-position: bottom;
+}
+#bottom2{
+    background-image: url(/img/raw_straw2.png);
+    background-size: cover;
+    background-position: top;
+}
+#bottom3{
+    background-image: url(/img/raw_choco2.png);
+    background-size: cover;
+    background-position: center;
+}
+#bottom4{
+    background-image: url(/img/raw_caramel2.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+/* 반응형 웹 */
+
+
+/* 모바일 */
+@media all and (max-width:768px) { 
+/* 상단 텍스트 */
+.rowtext{
+	margin-top: 5px;
+    margin-bottom: 8%;
+}
+.rowtext>h1{
+    font-size: 1.4em;
+	  font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.rowtext>p{
+	display: none;
+}	
+
+/* 상단 박스 지정 */
+.box1{
+    width: 100%;
+    height: 100%;
+	margin-bottom: 20px;
+}
+.vcon_img{
+	width: 100%;
+	margin: 0 auto;
+}	
+.vcon_img>img{
+	width: 50%;	
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 8%;
+}	
+/* 소개 콘텐츠 박스 */
+.con_set{
+    width: 99%;
+    display: block;
+}
+/* 콘텐츠 텍스트 */
+.vcon_text{
+    width: 100%;
+	color: #370818;
+}
+.vcon_text>h2{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+	  font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.vcon_text>h3{
+	display: none;
+}
+.vcon_text>p{
+    font-size: 0.75em;
+    line-height: 35px;
+	letter-spacing: -1px;
+	 font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+/* 텍스트 br설정 */	
+.br_pc{
+	display: none;
+}
+.br_mo{
+	display: inherit;
+}		
+	
+/* 이미지 클릭시 콘텐츠 변경*/
+.vcon2{
+    width: 100%;
+}
+.btn1{
+    margin-top: 0px;
+}
+.vcon2 img{
+    width: 100%;
+}
+
+/*컬러 박스 설정*/
+.box2{
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+	top: 15px;
+    margin-bottom: 0px;
+	font : bold 1.1em / 35px 'NEXON Lv1 Gothic OTF Bold';
+	text-align: center;
+	color: #370818;
+	letter-spacing: 4px;
+}
+.box2 img{
+	height: 35px;		
+}	
+.box2::before{
+	content: '▲ CLICK ▲';
+	width: 100%;
+	position: absolute;
+}
+#bottom1,
+#bottom2,
+#bottom3,
+#bottom4{
+	display: none;
+}
+	
+}
+
+
+
+/* 태블릿 사이즈*/
+@media all and (min-width:769px) and (max-width:1024px) {
+/* 상단 텍스트 */
+.rowtext{
+	margin-top: 5px;
+    margin-bottom: 5%;
+}
+.rowtext>h1{
+    font-size: 2.3em;
+}
+.rowtext>p{
+	display: none;
+}	
+
+/* 상단 박스 지정 */
+.box1{
+    width: 100%;
+    height: 100%;
+	margin-bottom: 20px;
+}
+.vcon_img{
+	width: 100%;
+	margin: 0 auto;
+}	
+.vcon_img>img{
+	width: 40%;	
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 8%;
+}	
+/* 소개 콘텐츠 박스 */
+.con_set{
+    width: 99%;
+    display: block;
+}
+/* 콘텐츠 텍스트 */
+.vcon_text{
+    width: 100%;
+}
+.vcon_text>h2{
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+.vcon_text>h3{
+	display: none;
+}
+.vcon_text>p{
+    font-size: 1.7em;
+    line-height: 60px;
+}
+/* 텍스트 br설정 */	
+.br_pc{
+	display: none;
+}
+.br_mo{
+	display: inherit;
+}		
+	
+/* 이미지 클릭시 콘텐츠 변경*/
+.vcon2{
+    width: 100%;
+}
+.btn1{
+    margin-top: 1%;
+}
+.vcon2 img{
+    width: 95%;
+}
+
+/*컬러 박스 설정*/
+.box2{
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+	top: 25px;
+    margin-bottom: 0px;
+	font : bold 2.3em / 70px 'Dolbomche_R';
+	text-align: center;
+	color: #370818;
+	letter-spacing: 4px;
+}
+.box2 img{
+	height: 70px;		
+}
+.box2::before{
+	content: '▲ CLICK ▲';
+	width: 100%;
+	position: absolute;
+}
+#bottom1,
+#bottom2,
+#bottom3,
+#bottom4{
+	display: none;
+}
+}
+
+
+/* 노트북 사이즈*/
+@media all and (min-width:1025px) and (max-width:1520px) { 
+	
+/* 상단 텍스트 */
+.rowtext{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+	margin-top: 5px;
+}
+.rowtext>h1{
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+.rowtext>p{
+	font-size: 0.65em;	
+}
+
+/* 상단 박스 지정 */
+.box1{
+    width: 100%;
+    height: 100%;
+}
+/* 콘텐츠 텍스트 */
+.vcon_text{
+    width: 52%;
+}
+.vcon_text>h2{
+    font-size: 1.85em;
+    margin-bottom: 25px;
+}
+.vcon_text>h3{
+    font-size: 0.95em;
+    margin-bottom: 25px;
+}
+.vcon_text>p{
+    font-size: 0.75em;
+    line-height: 25px;
+}
+.vcon_img{
+	width: 24%;		
+}	
+.vcon_img>img{
+	width: 90%;		
+}	
+/* 이미지 클릭시 콘텐츠 변경*/
+.btn1{
+    margin-top: 20px;
+}
+.vcon2 img{
+    width: 70%;
+}
+
+/*컬러 박스 설정*/
+.box2{
+    width: 100%;
+    height: 35px;
+    bottom: 60px;
+}
+
+/*  하단 텍스트 설정 */
+.box3{
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+    line-height: 50px;
+	padding-bottom: 30px;
+}
+#footer{
+	margin-top: 0;		
+}	
+}
+

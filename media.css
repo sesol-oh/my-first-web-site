@@ -1,0 +1,1826 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 반응형 웹 */
+.m_header{
+	display: none;
+}
+
+/* 모바일 */
+@media all and (max-width:768px) { 
+    header{
+        height: 80px;
+    }
+	/* 모바일 헤더 */
+	.mainWrap, .header_R{
+		display: none;
+	}
+	.m_header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.m_logo>img{
+		width: 30%;
+		padding: 15px;
+		float: left;
+	}
+	.m_menu{
+		padding: 15px;
+	}
+	.m_nav{
+		width: 55%;
+		background-color: #370818;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 9;
+		padding: 25px;
+	}
+	.m_nav>p:first-child{
+		font-size: 1.3rem;
+		white-space: nowrap;
+	}
+	.m_nav>img{
+		width: 7%;
+		float: right;
+		position: relative;
+		top: -25px;
+		cursor: pointer;
+	}
+	.m_line{
+		margin: 15px 0px;
+		border-bottom: 1px solid #fff;
+	}
+	.m_nav a, .m_nav>p{
+		color: #fff;
+		font-family: 'NEXON Lv1 Gothic OTF bold';
+	}
+	.m_nav>ul>li>a{
+		font-size: 1.1em;
+		line-height: 50px;
+	}
+	.m_nav>ul>li{
+		text-align: right;
+		border-bottom: 1px solid #a0a0a0;
+		cursor: pointer;
+	}
+	.m_nav>ul>li:first-child::before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 25px;
+		margin-top: 10px;
+		background:url(../img/flavor_vanilla.png) no-repeat center / cover;
+	}
+   .m_nav>ul>li:nth-child(2)::before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 25px;
+		margin-top: 10px;
+		background: url(../img/flavor_green.png) no-repeat center / cover;
+	}
+   .m_nav>ul>li:nth-child(3)::before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 25px;
+		margin-top: 10px;
+		background: url(../img/flavor_choco.png) no-repeat center / cover;
+	}	
+	 .m_nav>ul>li:nth-child(4)::before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 25px;
+		margin-top: 10px;
+		background: url(../img/flavor_straw.png) no-repeat center / cover;
+	}	
+	.m_nav>ul>li:last-child::before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 25px;
+		margin-top: 10px;
+		background: url(../img/flavor_blue.png) no-repeat center / cover;
+	}
+	.m_nav>div{
+		margin-top: 20px;
+	}
+	.m_nav>div>a:first-child{
+		font-size: 1.1rem;
+		float: left;
+	}
+	.m_nav>div>a:last-child{
+		font-size: 1.1rem;
+		float: right;
+	}	
+.m_subUl>li>ul{
+		text-align: center;
+	}
+.m_subUl>li>ul>li>a{
+		font-family: 'NEXON Lv1 Gothic OTF bold';
+		line-height: 45px;
+		font-size: 0.9rem;
+	}
+	
+	/* 메인페이지 */
+	.main>p>span{
+		font-size: 0.8em;
+		font-family: 'NEXON Lv1 Gothic OTF bold';
+		letter-spacing: -0.5px;
+	}
+	.mainli>ul p,
+	.mainli>ul p>span{
+		font-family: 'NEXON Lv1 Gothic OTF bold';
+	}
+	.slide01  li:first-child{
+		display: none;
+	}
+	.slide01  li:last-child{
+		display: none;
+	}
+	.slide01 .mimg2>img{
+		width: 170px;
+		height: 250px;
+	}
+	.slide01 li:nth-child(2){
+		width: 100%;
+		max-width: 170px;
+		margin: 0 auto;
+	}
+.mimg2{
+    height:310px;
+	margin-top: 30px;
+}
+.mainli{
+    height: 100%;
+	overflow: inherit;
+}
+.slide01 li p{
+    font-size: 0.9rem;
+	line-height: 20px;
+}
+.slide01 li p>span{
+     font-size: 0.75rem;
+	margin-left: 20px;
+}
+.mimg2 + p{
+    margin-left: -40px;
+}
+.mainli .left{
+	width: 50px;
+	height: 50px;
+}	
+.mainli .right{
+	width: 50px;
+	height: 50px;
+}		
+.slide01::before{
+    height: 165px;
+}
+.slide01::after{
+    height: 165px;
+}	
+.slide02{
+    width: 100%;
+    display: block;
+}
+.timg+p{
+    display: none;
+}
+.m_s2T{
+	display: block;
+	font-size: 0.9rem;
+	position: relative;
+	top: -10px;
+	}
+.timg{
+    width: 200px;
+    height: 175px;
+	margin: 0 auto;
+}
+.timg img{
+		width:200px;
+	}
+.timg1 img{
+	margin-top: 20px;
+}
+.timg2 img{
+	margin-top: 5px;
+}	
+.slide02::before{
+    height: 165px;
+}
+.slide02::after{
+    height: 165px;
+}
+.slide03 li p{
+    font-size: 0.85rem;
+    margin-top: 330px;
+	position: relative;
+}
+.slide03 img{
+	display: none;
+}
+.slide03::before{
+	content:'';
+	width: 100%;
+	height: 323px;
+	background: url(../img/mobile3.jpg) no-repeat center / cover;
+	position: absolute;
+	top: -3%;
+	}
+	
+/* 콘텐츠 4*/
+.slide04 li p{
+    font-size: 0.85rem;
+    margin-top: 330px;
+	position: relative;
+}
+.slide04 img{
+  display: none;
+}
+.slide04::before{
+	content:'';
+	width: 100%;
+	height: 323px;
+	background: url(../img/mobile4.jpg) no-repeat center / cover;
+	position: absolute;
+	top: -3%;
+	}
+	
+	/* 추천메뉴 */
+	.line1{
+		width: 55%;
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+	.title h1{
+		font-size: 1.3em;
+		margin-bottom: 10px;
+		font-family: 'NEXON Lv1 Gothic OTF Bold';
+	}
+	.title h2{
+		font-size: 0.7em;
+		margin-bottom: 35px;
+		font-family: 'NEXON Lv1 Gothic OTF Bold';
+	}
+	.swiper img{
+		width: 25vw;
+	}
+	.swiper p{
+	letter-spacing: -0.5px;
+	font: bold 0.7rem / 20px 'NEXON Lv1 Gothic OTF Bold';
+}
+.stick_mr{
+		padding-top: 6px;
+}	
+.but{
+    padding: 15px 0 20px 0;
+}	
+.but>a{
+    width: 200px;
+    height: 25px;
+	font: bold 0.75em / 26px 'NEXON Lv1 Gothic OTF Bold';
+}	
+	.s_left{
+    width: 50px;
+    height: 50px;
+    left: -40px;
+	top: 10px;
+}
+.s_right{
+    width: 50px;
+    height: 50px;
+    right: -40px;
+	top: 10px;
+}
+	
+	
+/* 레시피 */
+	.content3{
+    width: 71%;
+}
+.content3 p{
+    font-family:  'NEXON Lv1 Gothic OTF Bold';
+}	
+.recipe_ko{
+	  font-size: 0.8em;
+	  margin-top: 60px;
+      margin-bottom: 10px;
+}
+.recipe_en{
+    font-size: 1.4rem;
+    margin-bottom: 7%;
+}	
+.recipe_p>span{
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 10px; 
+	 font-family:  'NEXON Lv1 Gothic OTF Bold';
+}
+.recipe_p{
+	width: 56%;
+    font-size: 0.7rem;
+    line-height: 25px;
+    margin-left: 0%;
+	letter-spacing: -0.7px;
+}	
+.recipeWrap>div>a{
+	width:  100px;
+	height: 100px;
+	border-radius: 100px;
+}	
+.recipeWrap>div{
+    width: 100%;
+	justify-content: space-between;
+}	
+.recipe2, .recipe4{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+}
+.re_pc{
+		display: none;
+}
+.re_mo{
+	display: block;
+	font-family:  'NEXON Lv1 Gothic OTF Bold';
+}
+ .recipe_btn{
+    width: 90%;
+    height: 30px;
+     margin: 25px 15px 70px 0;
+	 font: bold 0.7rem / 31px  'Dolbomche_B';
+}
+.recipeWrap>div:first-child, 
+.recipeWrap>div:nth-child(2){
+    margin-bottom: 5%;
+}	
+.modal_Wrap{
+	display:block;
+	padding: 15px;
+}
+.effect{
+	display: none;
+}
+.affo1>h3{
+	 font: bold 1.1em / 20px 'NEXON Lv1 Gothic OTF bold';
+}
+.affo1>p{
+	margin: 10px 0px;
+}	
+.affo1>img{
+	display: none;
+}
+.affo2{
+	margin-left: 0;
+}	
+.affoTop{
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.affoTop>div:first-child>p{
+	font: bold 1em/18px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 12px;
+}
+.affoTop>div:first-child>ul>li{
+	margin-bottom: 8px;
+	white-space: nowrap;
+}
+	.affoTop>div:first-child>ul>li>img{
+		width: 18px;
+	}	
+.affoTop>div:first-child>ul>li>p{
+		font-size: 0.6em;
+	    margin-left: 5px;
+}
+.affoTop>div:last-child{
+	margin-left: 5px;
+}
+.affoTop>div:last-child>p:first-child{
+		font: bold 1em/18px  'NEXON Lv1 Gothic OTF bold';
+		margin-bottom: 10px;
+}
+.affoTop>div:last-child>p{
+		font: bold 0.6em/20px  'NEXON Lv1 Gothic OTF Light';
+		margin-bottom: 6px;
+	white-space: nowrap;
+}
+.affo_direc>p:first-child{
+		font-size: 1em;
+	    margin-bottom: 7px;
+}
+.affo_direc>p{
+		font: bold 0.5em/20px  'NEXON Lv1 Gothic OTF Light';
+}
+.affo_direc>ul{
+	display: flex;
+	padding-left: 0;
+}
+.affo_direc li{
+		display: none;
+}	
+.affo_close{
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	padding: 0;
+	padding-top: 15px;
+	padding-right: 5px;
+}
+.affo_close>img{
+		width: 65%;
+	}
+	
+	/* 칵테일 wrap */
+.cock1>h3{
+	 font: bold 1em / 20px 'NEXON Lv1 Gothic OTF bold';
+}
+.cock1>p{
+	margin: 8px 0px;
+}
+.cock1>img{
+	display: none;
+}
+.cock2{
+	margin-left: 0;
+}
+.cockTop{
+	justify-content: space-between;
+}
+.cockTop>div:first-child>p{
+	font: bold 1em/20px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 5px;
+}
+.cockTop>div:first-child>ul>li>img{
+		width: 18px;
+}
+.cockTop>div:first-child>ul>li{
+	margin-bottom: 5px;
+}
+.cockTop>div:first-child>ul>li>p{
+	font: bold 0.6em/20px  'NEXON Lv1 Gothic OTF Light';
+	margin-left: 5px;
+	white-space: nowrap;
+}
+.cockTop>div:last-child{
+	margin-left: 7px;
+}
+.cockTop>div:last-child>p:first-child{
+		font: bold 1em/20px  'NEXON Lv1 Gothic OTF bold';
+		margin-bottom:5px;
+}
+.cockTop>div:last-child>p{
+	font: bold 0.6em/15px  'NEXON Lv1 Gothic OTF Light';
+	margin-bottom: 0px;
+	white-space: nowrap;
+}
+
+.cock_direc>p:first-child{
+	font: bold 1em/20px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 5px;
+}
+.cock_direc>p{
+	font: bold 0.6em / 19px 'NEXON Lv1 Gothic OTF Light';
+}
+
+/* 이벤트 */
+	.eventWrap{
+	display: block;
+    margin-bottom: 70px;
+}
+.eventText>p:first-child{
+    font-size: 2rem;
+	text-align: center;
+    margin-bottom: 20px;
+	font-family:  'NEXON Lv1 Gothic OTF Bold';	
+}
+.eventText>p:nth-child(2){
+	text-align: center;
+    margin-bottom: 20px;
+	font: bold 0.8rem / 22px 'NEXON Lv1 Gothic OTF Bold';	
+}
+.videoWrap{
+  width: 100%;
+}    
+.eventIcon{
+    width: 100%;
+	text-align: center;
+}
+.eventIcon img{
+    width: 50%;
+	margin-bottom: 20px;
+}
+.eventVideo{
+    height: 250px;
+    padding-top: 0px;
+}
+/* 비디오 뒷 배경 */
+.eventVideo::after{
+    width:  200%;
+    height: 50%;
+    background: url(../img/event_bg.png) no-repeat center / cover;
+    top:25%;
+    left: -50%;
+    z-index: -9;
+}
+	
+
+/* 인스타그램 */
+.in_text h3{
+  font: bold 1.6em / 40px  'NEXON Lv1 Gothic OTF Bold';		
+}
+.in_text p{
+	margin: 10px 0 25px 0;
+	 font: bold 0.9em / 20px 'NEXON Lv1 Gothic OTF Bold';		
+}
+/* 인스타그램 이미지 */
+
+.in_img ul{
+    margin-bottom: 5px;
+}
+	.in_img li:nth-child(1),
+	.in_img li:nth-child(3),
+	.in_img li:nth-child(4){
+		display: none;
+	}
+
+	
+/* footer */
+footer{
+    margin-top: 50px;
+}
+footer p{
+   	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}	
+/* 상단 footer 라인 */
+.f_top{
+    height: 25px;
+}
+.ftop_text>p>a{
+    line-height: 50px;
+    font-size: 1em;
+    display: inline-block;
+}
+.f_wrap{
+    width: 340px;
+    display: block;
+    padding: 10px 10px;
+}
+.f_wrap>img{
+    width: 100px;
+	margin-bottom: 10px;
+}
+
+.f_textL>p:nth-child(odd){
+    font-size: 0.85em;
+}
+.f_textL>p:nth-child(2n){
+    letter-spacing: 0px;
+	font :  0.75em / 20px 'NEXON Lv1 Gothic OTF bold';
+}
+.f_textR>p:first-child{
+    font: bold 0.85em / 23px 'NEXON Lv1 Gothic OTF bold';
+	margin-top: 15px;
+}
+.f_textR>p:nth-child(2){
+    font-size: 1.3em;
+    margin-top: 10px;
+     margin-bottom: 5px;
+}
+.f_textR>p:nth-child(3){
+	font: bold 0.75em / 18px 'NEXON Lv1 Gothic OTF bold';
+	letter-spacing: 0;
+}
+.f_textR>p:last-child{
+	font: bold 0.75em / 20px 'NEXON Lv1 Gothic OTF bold';
+    margin-top: 10px;
+    letter-spacing: 0px;
+}
+.f_bottom{
+    height: 25px;
+}
+.fbot_text{
+    width: 400px;
+}
+.fbot_text>p:first-child{
+    color: #fff;
+	margin-left: 6px;
+	font: bold 0.75em / 25px 'NEXON Lv1 Gothic OTF Bold';
+}
+.fbot_text a{
+   display: none;
+}	
+.br_mo{
+	display: inherit;
+}	
+}
+
+/* 모바일 사이즈 미세 조정 */
+@media all and (min-width:530px) and (max-width:767px) {
+.affo_direc li{
+	display: block;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+	.affo_direc li>img{
+		width: 100%;
+	}	
+.recipeWrap>div>a{
+	width:  160px;
+	height: 160px;
+	border-radius: 160px;
+}		
+.recipe_p>span{
+    font-size: 1.2rem;
+}
+.recipe_p{
+	width: 50%;
+    font-size: 1rem;
+    line-height: 30px;
+}	
+	/* 칵테일 wrap */
+.cockTop>div:first-child>p{
+	font: bold 1.1em/30px  'NEXON Lv1 Gothic OTF bold';
+}
+.cockTop>div:first-child>ul>li>img{
+		width: 20px;
+}
+.cockTop>div:first-child>ul>li>p{
+	font: bold 0.8em/30px  'NEXON Lv1 Gothic OTF Light';
+}
+.cockTop>div:last-child>p:first-child{
+		font: bold 1.1em/30px  'NEXON Lv1 Gothic OTF bold';
+}
+.cockTop>div:last-child>p{
+	font: bold 0.75em/24px  'NEXON Lv1 Gothic OTF Light';
+}
+
+.cock_direc>p:first-child{
+	font: bold 1.1em/25px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 10px;
+}
+.cock_direc>p{
+	font: bold 0.75em / 28px 'NEXON Lv1 Gothic OTF Light';
+}
+.effect{
+	line-height: 150px;
+}	
+}
+
+
+/* 태블릿 사이즈*/
+@media all and (min-width:769px) and (max-width:1024px) { 
+    header{
+        height: 130px;
+    }
+	/* 모바일 헤더 */
+	.mainWrap, .header_R{
+		display: none;
+	}
+	.m_header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+	}
+	.m_logo>img{
+		width: 50%;
+		float: left;
+	}
+	.m_menu>img{
+		width: 40px;
+	}
+	.m_nav{
+		width: 55%;
+		background-color: #370818;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 9;
+		padding: 25px;
+	}
+	.m_nav>p:first-child{
+		font-size: 2rem;
+		white-space: nowrap;
+	}
+	.m_nav>img{
+		float: right;
+		position: relative;
+		top: -35px;
+		cursor: pointer;
+	}
+	.m_line{
+		margin: 20px 0px;
+		border-bottom: 1px solid #fff;
+	}
+	.m_nav a, .m_nav>p{
+		color: #fff;
+		font-family: 'NEXON Lv1 Gothic OTF bold';
+	}
+	.m_nav>ul>li>a{
+		font-size: 1.6em;
+		line-height: 80px;
+	}
+	.m_nav>ul>li{
+		text-align: right;
+		border-bottom: 1px solid #a0a0a0;
+		cursor: pointer;
+	}
+	.m_nav>ul>li:first-child::before{
+		content: '';
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 25px;
+		margin-top: 20px;
+		background:url(../img/flavor_vanilla.png) no-repeat center / cover;
+	}
+   .m_nav>ul>li:nth-child(2)::before{
+		content: '';
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 25px;
+		margin-top: 20px;
+		background: url(../img/flavor_green.png) no-repeat center / cover;
+	}
+   .m_nav>ul>li:nth-child(3)::before{
+		content: '';
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 25px;
+		margin-top: 20px;
+		background: url(../img/flavor_choco.png) no-repeat center / cover;
+	}	
+	 .m_nav>ul>li:nth-child(4)::before{
+		content: '';
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 25px;
+		margin-top: 20px;
+		background: url(../img/flavor_straw.png) no-repeat center / cover;
+	}	
+	.m_nav>ul>li:last-child::before{
+		content: '';
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 25px;
+		margin-top: 20px;
+		background: url(../img/flavor_blue.png) no-repeat center / cover;
+	}
+	.m_nav>div{
+		margin-top: 20px;
+	}
+	.m_nav>div>a:first-child{
+		font-size: 1.6rem;
+		float: left;
+	}
+	.m_nav>div>a:last-child{
+		font-size: 1.6rem;
+		float: right;
+	}	
+.m_subUl>li>ul{
+		text-align: center;
+	}
+.m_subUl>li>ul>li>a{
+		font-family: 'NEXON Lv1 Gothic OTF bold';
+		line-height: 50px;
+		font-size: 1.3rem;
+	}
+	
+	/* 메인 배너 */
+	.main>p>span{
+		font-size: 1.4rem;
+	}
+	.mainli .left{
+    left: 2%;
+}
+.mainli .right{
+    right: 2%;
+	}
+	.slide01  li:last-child{
+	display: none;
+	}
+	.slide01 .mimg2>img{
+		width: 280px;
+		height: 410px;
+	}
+	.slide01 .mimg1>img{
+		width: 270px;
+		height: 410px;
+	}
+	.mimg1{
+		height: 550px;
+		margin-top: 80px;
+	}
+	.mimg2{
+		height: 550px;
+		margin-top: 80px;
+	}
+	.slide01{
+		width: 85%;
+	}
+	.slide01>li{
+		width: 45%;
+		display: flex;
+	}
+	.slide01 li p>span{
+	display: none;
+	}
+	.slide01 li p{
+	margin-left: 0;
+}
+/* 슬라이드 2 */	
+	.slide02{
+    width: 100%;
+    display: block;
+	position: relative;
+}
+.timg+p{
+    display: none;
+}
+.m_s2T{
+	display: block;
+	font-size: 1.4rem;
+	position: relative;
+	top: -40px;
+	}
+.timg{
+    width:  420px;
+	height: 337px;
+	margin: 0 auto;
+}
+.timg img{
+		width:420px;
+	}
+.timg1 img{
+	margin-top: 25px;
+}
+	.timg2 img{
+		margin-top: -10px;
+}	
+.slide03 li p{
+    font-size: 1.4rem;
+    margin-top: 630px;
+	position: relative;
+}
+.slide03 img{
+	display: none;
+}
+.slide03::before{
+	content:'';
+	width: 100%;
+	height: 602px;
+	background: url(../img/t_slide3.jpg) no-repeat center / cover;
+	position: absolute;
+	top: 0;
+	}
+	/* 콘텐츠 4*/
+.slide04 li p{
+    font-size: 1.4rem;
+    margin-top: 630px;
+	position: relative;
+}
+.slide04 img{
+  display: none;
+}
+.slide04::before{
+	content:'';
+	width: 100%;
+	height: 602px;
+	background: url(../img/t_slide4.jpg) no-repeat center / cover;
+	position: absolute;
+	top: 0%;
+	}
+	
+	/* 추천메뉴 */
+		.line1{
+		width: 45%;
+		margin-top: 70px;
+		margin-bottom: 40px;
+	}
+	.title h1{
+		font-size: 2.2em;
+		margin-bottom: 20px;
+	}
+	.title h2{
+		font-size: 1.1em;
+		margin-bottom: 50px;
+	}
+	.swiper img{
+		width: 19vw;
+	}
+	.swiper p{
+	font: bold 1rem / 25px 'Dolbomche_B';
+}
+	.but{
+    padding: 30px 0 35px 0;
+}	
+	.s_left{
+    left: -100px;
+	top: 10px;
+}
+.s_right{
+    right: -100px;
+	top: 10px;
+}
+
+/* 레시피 */
+	.recipeWrap{
+		height: 600px;
+	}
+.affo_close{
+	right: 20px;
+	top: 15px;
+	cursor: pointer;
+	padding: 10px;
+}
+	.recipe_ko{
+	  font-size: 1.3em;
+	  margin-top: 100px;
+      margin-bottom: 20px;
+	 font-weight: 900;
+	}
+.recipe_en{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}		
+.recipe1, .recipe3{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+}	
+.recipeWrap>div{
+    width: 100%;
+	justify-content: space-between;
+}	
+	.re_pc{
+		display: none;
+	}
+.re_mo{
+		display: block;
+	}
+ .recipe_btn{
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+     margin: 0 0 100px 0;
+	 line-height: 50px;
+	 box-sizing: border-box;
+}
+.recipe_btn:hover{
+    background-color: #fff;
+	color: #370818;
+}
+.effect{
+	display: none;
+}
+
+
+	
+.modal_Wrap{
+	display:block;
+	box-sizing: border-box;
+	padding: 20px;
+}
+/* 아이스크림 라떼 wrap */
+.latte1>h3{
+	 font: bold 1.8em / 35px 'NEXON Lv1 Gothic OTF bold';
+	color: #fff;
+}
+.latte1>p{
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	margin: 15px 0;
+}
+.v_stop{
+	width: 100%;
+	height: 320px;
+	margin-bottom: 20px;
+}
+.v_stop>iframe{
+	margin-top: 10px;
+	width: 100%;
+	height: 300px;
+}
+.latte2{
+	display: none;
+}
+	.latte3>p:first-child,
+	.latte3>p:nth-child(2),
+	.latte3>p:nth-child(3),
+	.latte3>p:nth-child(4),
+	.latte3>p:nth-child(8),
+	.latte3>p:nth-child(9),
+	.latte3>p:nth-child(10),
+	.latte3>p:first-child{
+		display: none;
+	}
+	.latte3>p:nth-child(5){
+	font: bold 2em/40px  'NEXON Lv1 Gothic OTF bold';
+	margin: 0px 0 15px 0 ;
+ }
+	.latte3 p:not(.latte3_title){
+	font: bold 1.2em / 45px 'NEXON Lv1 Gothic OTF Light';
+}
+/* 파르페 wrap */
+.parfait1>h3{
+	 font: bold 1.8em / 40px 'NEXON Lv1 Gothic OTF bold';
+	color: #fff;
+}
+.parfait1>p{
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	margin: 10px 0;
+}
+.p_stop{
+	width: 100%;
+	height: 315px;
+	margin-bottom: 20px;
+}
+.p_stop>iframe{
+	margin-top: 0px;
+	width: 100%;
+	height: 310px;
+}
+.parfait2{
+	margin-left: 0px;
+}
+.parfaitTop{
+	display: none;
+}
+.parfait_direc>p:first-child{
+	font: bold 1.8em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin: 5px 0 5px 0;
+}
+.parfait_direc>p{
+	font: bold 1em /30px 'NEXON Lv1 Gothic OTF Light';
+}	
+
+/* 이벤트 */
+	.eventWrap{
+	width: 70%;
+	display: block;
+    margin-bottom: 120px;
+}
+.eventText>p:first-child{
+    font-size: 3.3rem;
+	text-align: center;
+    margin-bottom: 30px;
+}
+.eventText>p:nth-child(2){
+	text-align: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.eventIcon{
+    width: 100%;
+	text-align: center;
+}
+.eventIcon img{
+    width: 80%;
+	margin-bottom: 30px;
+}
+.videoWrap{
+  width: 100%;
+}    
+.eventVideo{
+    height: 400px;
+    padding-top: 0px;
+}
+/* 비디오 뒷 배경 */
+.eventVideo::after{
+    content: '';
+    position: absolute;
+    width:  200%;
+    height: 50%;
+    background-color: #370818;
+    background-image: url(../img/event_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:25%;
+    left: -50%;
+    z-index: -9;
+}
+	
+
+/* 인스타그램 */
+.in_text h3{
+    font-size: 3em;
+}
+.in_text p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.7em;
+}
+/* 인스타그램 이미지 */
+
+.in_img ul{
+    margin-bottom: 5px;
+}
+	.in_img li:nth-child(2),
+	.in_img li:nth-child(4){
+		display: none;
+	}
+.in_img img{
+    width: 95%;
+}
+/* footer */
+footer{
+    width: 100%;
+    margin-top: 50px;
+}
+footer p{
+    font-family: 'Dolbomche_r';
+}
+
+/* 상단 footer 라인 */
+.f_top{
+    height: 35px;
+}
+	.ftop_text{
+    width: 740px;
+    margin: 0 auto;
+}
+.ftop_text>p{
+    float: left;
+	margin-left: 5px;
+}
+.ftop_text>p>a{
+    line-height: 35px;
+    font-size: 0.95em;
+}
+.f_wrap{
+	 width: 730px;
+    padding: 15px 10px;
+}
+.f_wrap>img{
+    display: none;
+}
+
+.f_textL>p:nth-child(odd){
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.f_textL>p:nth-child(2n){
+    line-height: 23px;
+    font-size: 1em;
+    letter-spacing: 0px;
+}
+.f_textL>p:nth-child(2){
+    margin-bottom: 10px;
+}
+.f_textR{
+		margin-left: 10px;
+}
+.f_textR>p:first-child{
+    font-size: 1.2em;
+}
+.f_textR>p:nth-child(2){
+    font-size: 2em;
+    margin-top: 20px;
+     margin-bottom: 20px;
+}
+.f_textR>p:nth-child(3){
+    line-height: 23px;
+    letter-spacing: 0px;
+}
+.f_textR>p:last-child{
+    letter-spacing: 0px;
+}
+
+.f_bottom{
+    height: 35px;
+}
+.fbot_text{
+    width: 730px;
+}
+.fbot_text>p:first-child{
+    line-height: 35px;
+    font-size: 0.95em;
+}
+.fbot_text a{
+    line-height: 35px;
+    font-size: 0.95em;
+}	
+}
+
+
+/* 노트북 사이즈*/
+@media all and (min-width:1025px) and (max-width:1520px){ 
+/* 전체 body 사이즈 */	
+    header{
+        height: 100px;
+    }
+.header_R>ul{
+    margin: 5px 0 0 0;
+}	
+.header_R>ul>li{
+    font-size: 0.7rem;
+}
+.h_facebook>a,
+.h_insta>a,
+.h_youtube>a{
+    width: 15px;
+    height: 15px;
+	margin-left: 0;
+	margin-right: 5px;
+}
+.mainWrap{
+    width: 100%;
+/*    height: 50px;*/
+    background:#fff;
+    margin-top: 30px;
+}
+nav>ul>li{
+    font-size: 0.85rem;
+	 line-height: 50px;
+}	
+.logo img{
+    height: 50px;
+} 
+.subMenu li{
+    line-height: 40px;
+}	
+.mainWrap:hover .subMenu{
+    opacity: 1;
+    height: 209px;
+}
+    
+/* 메인 콘텐츠*/	
+.main>p>span{
+   	font: bold 1em / 30px 'Dolbomche_B';
+}
+.mainli{
+    height: 400px;
+}	
+/* mainli 화살표 label 설정 */
+.mainli .left,
+.mainli .right{
+    width: 55px;
+    height: 55px;
+}
+.slide01 li p{
+    font-size: 1rem;
+}
+.slide01 li p>span{
+     font-size: 0.75rem;
+}	
+/* 피칸 아이스크림 배경색 */
+.slide01::before{
+    height: 175px;
+}
+.slide01::after{
+    height: 175px;
+}
+/* 콘텐츠 이미지와 텍스트 배치 속성 */
+.mimg1{
+    height: 330px;
+    margin-top: 30px;
+}
+.mimg1>img{
+	width: 195px;
+	height: 290px;
+}
+.mimg2{
+    height: 350px;
+    margin-top: 10px;
+}
+.mimg2>img{
+	width: 220px;
+	height: 320px;
+}
+.mimg2 + p{
+    margin-left: 0px;
+}
+.mimg3{
+    height: 350px;
+    margin-top: 15px;
+	margin-left: -10px;
+}
+.mimg3>img{
+	width: 195px;
+	height: 320px;
+}
+.mimg3 + p{
+    margin-left: 30px;
+}	
+
+/* 두번째 콘텐츠 설정*/
+/* 트위스트 아이스크림 배경색*/
+.slide02::before{
+    height: 175px;
+}
+.slide02::after{
+    height: 175px;
+}
+.timg+p{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.timg{
+    height: 270px;
+	margin-top: 70px;
+}
+	.timg img{
+		width: 90%;
+	}
+
+	/* 콘텐츠 3,4*/
+.slide03 li p{
+    font-size: 1rem;
+}
+.slide03 img{
+	width: 100%;
+	height: 350px;
+   object-fit: cover;
+}
+	.slide03 img:first-child{
+		display: none;
+	}
+	.tablet3{
+		display: block;
+	}
+.slide04 img:first-child{
+		display: none;
+	}
+	.tablet4{
+		display: block;
+	}
+.slide04 li p{
+    font-size: 1rem;
+}
+.slide04 img{
+	height: 350px;
+	 object-fit: cover;
+}	
+
+/* 추천메뉴 */
+	.line1{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.title h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.title h2{
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+.swiper {
+        width: 68.8%;
+      }
+.swiper img{
+    width: 11vw;
+}	
+.swiper p{
+    font: bold 0.8rem / 20px 'Dolbomche_B';
+}	
+.but{
+    padding: 5px 0 10px 0;
+}
+.but>a{
+    width: 180px;
+    height: 25px;
+	line-height: 25px;
+    font-size: 0.8rem;
+}
+.but>div{
+	width: 60px;
+    height:60px;
+}	
+.s_left{
+    left: -100px;
+}
+.s_right{
+    right: -100px;
+}
+	
+/* 레시피 콘텐츠*/	
+.recipe_ko{
+		margin-top: 70px;
+		margin-bottom: 15px;
+		font-size: 0.9rem;
+}	
+.recipe_en{
+		font-size: 1.7em;
+}	
+.recipeWrap>div>a{
+	width: 170px;
+	height: 170px;
+	border-radius: 170px;
+}
+.recipe_p>span{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+.recipe_p{
+    font-size: 0.85rem;
+    line-height: 30px;
+}	
+ .recipe_btn{
+    width: 22%;
+    height: 25px;
+    font-size: 0.8rem;
+     margin: 15px 7% 80px 0;
+	 line-height: 25px;
+}
+	.effect{
+	font-size: 0.9em;
+	line-height: 160px;
+}
+	.effect>img{
+		width: 15px;
+	}
+	.modal-open:hover>.effect{
+	border: 5px solid #370818;
+}	
+	
+/* 모달 팝업 */
+.affo_close{
+	right: 5px;
+	top: 10px;
+	cursor: pointer;
+	padding: 10px;
+}
+.affo_close>img{
+    width: 80%;        
+}    
+	.modal_Wrap{
+	padding: 20px;
+}
+	.affo1{
+		width: 40%;
+	}
+	.affo1>h3{
+	 font: bold 1.3em / 35px 'NEXON Lv1 Gothic OTF bold';
+}
+.affo1>p{
+	margin: 10px 0px;
+}
+.affo1>img{
+	width: 100%;
+	margin-top: 10px;
+	height: 260px;
+	object-fit: cover;
+}
+.affo2{
+	margin-left: 25px;
+}
+.affoTop>div:first-child>p{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 15px;
+}	
+.affoTop>div:first-child>ul>li{
+	margin-bottom: 10px;
+}
+.affoTop>div:first-child>ul>li>p{
+		font-size: 0.8em;
+	    margin-left: 10px;
+}	
+.affoTop>div:first-child>ul>li>img{
+		width: 30px;
+}	
+.affoTop>div:last-child{
+	margin-left: 50px;
+}
+.affoTop>div:last-child>p:first-child{
+		font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+		margin-bottom: 15px;
+}
+.affoTop>div:last-child>p{
+		font: bold 0.8em/30px  'NEXON Lv1 Gothic OTF Light';
+		margin-bottom: 8px;
+}	
+.affo_direc>p:first-child{
+		font-size: 1.3em;
+		margin-top: 5px;
+	    margin-bottom: 0px;
+}	
+.affo_direc>p{
+		font: bold 0.8em/30px  'NEXON Lv1 Gothic OTF Light';
+}
+.affo_direc li{
+	margin-right: 15px;
+	margin-top: 10px;
+}
+	.affo_direc li>img{
+		width: 120px;
+	}	
+
+	/* 아이스크림 라떼 wrap */
+.latte1>h3{
+	 font: bold 1.3em / 35px 'NEXON Lv1 Gothic OTF bold';
+	white-space: nowrap;
+}
+.latte1>p{
+	margin: 10px 0px;
+}
+	.latte1{
+		width: 45%;
+	}
+.v_stop{
+	width: 100%;
+	height: 270px;
+}
+.v_stop>iframe{
+	width: 100%;
+	height: 270px;
+}
+.latte2{
+	width: 20%;
+	overflow: hidden;
+	margin-left: 4%;
+}
+.latte2>p{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 10px;
+}
+.latte2>ul{
+	padding: 0 10px 0 0px;
+}
+.latte2>ul>li{
+	margin-bottom: 9px;
+}
+.latte2>ul>li>img{
+	width: 30px;
+}
+.latte2>ul>li>p{
+	font: bold 0.8em / 35px 'NEXON Lv1 Gothic OTF Light';
+	margin-left: 10px;
+}
+.latte3>p:nth-child(1){
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 10px;
+}
+.latte3>p:nth-child(5){
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin: 10px 0 5px 0 ;
+}
+.latte3>p:nth-child(8){
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin: 10px 0 5px 0 ;
+}
+.latte3 p:not(.latte3_title){
+	font: bold 0.75em / 30px 'NEXON Lv1 Gothic OTF Light';
+}
+	
+/* 칵테일 wrap */
+.cock1>h3{
+	 font: bold 1.3em / 35px 'NEXON Lv1 Gothic OTF bold';
+	white-space: nowrap;
+}
+.cock1>p{
+	margin: 10px 0px;
+}
+.cock1{
+		width: 50%;
+	}
+.cock1>img{
+	width: 100%;
+	height: 270px;
+	object-fit: cover;
+}
+.cock2{
+	margin-left: 3%;
+}
+.cockTop>div:first-child>p{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF Bold';
+	margin-bottom: 10px;
+}
+.cockTop>div:first-child>ul>li>img{
+	width: 30px;
+}
+.cockTop>div:first-child>ul>li{
+	margin-bottom: 15px;
+}
+.cockTop>div:first-child>ul>li>p{
+ 	font: bold 0.8em / 0px 'NEXON Lv1 Gothic OTF Light';
+	margin-left: 15px;
+}
+.cockTop>div:last-child{
+	margin-left: 80px;
+}
+.cockTop>div:last-child>p:first-child{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 8px;
+}
+.cockTop>div:last-child>p{
+		font: bold 0.75em/30px  'NEXON Lv1 Gothic OTF Light';
+}
+
+.cock_direc>p:first-child{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 10px;
+	margin-top: -5px;
+}
+.cock_direc>p{
+	font: bold 0.75em / 30px 'NEXON Lv1 Gothic OTF Light';
+}
+/* 파르페 wrap */
+.parfait1>h3{
+	 font: bold 1.3em / 35px 'NEXON Lv1 Gothic OTF bold';
+}
+.parfait1{
+	width: 37.5%;		
+}
+.parfait1>p{
+	margin: 10px 0;
+}
+.p_stop{
+	width: 100%;
+	height: 270px;
+}
+.p_stop>iframe{
+	width: 100%;
+	height: 270px;
+}
+.parfait2{
+	margin-left: 30px;
+}
+.parfaitTop>div>p:first-child{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 10px;
+}
+.parfaitTop>div:first-child>ul>li{
+	margin-bottom: 10px;
+}
+.parfaitTop>div:first-child>ul>li>p{
+ 	font: bold 0.8em / 0px 'NEXON Lv1 Gothic OTF Light';
+	margin-left: 10px;
+}
+.parfaitTop>div:first-child>ul>li>img{
+	width: 27px;
+}
+.parfaitTop>div:last-child{
+	margin-left: 50px;
+}
+.parfaitTop>div:last-child>p:first-child{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin-bottom: 10px;
+}
+.parfaitTop>div:last-child>p{
+	font: bold 0.75em / 28.5px 'NEXON Lv1 Gothic OTF Light';
+}
+.parfait_direc>p:first-child{
+	font: bold 1.3em/30px  'NEXON Lv1 Gothic OTF bold';
+	margin: 0 0 5px 0;
+}
+.parfait_direc>p{
+	font: bold 0.7em / 28.5px 'NEXON Lv1 Gothic OTF Light';
+}	
+/* 이벤트 */
+.eventWrap{
+    width: 70%;
+    margin-bottom: 150px;
+}
+.eventText>p:first-child{
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+.eventText>p:nth-child(2){
+    font-size: 1rem;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+.eventIcon{
+    width: 100%;
+}
+.eventIcon img{
+    width: 60%;
+}
+.videoWrap{
+  width: 100%;
+  max-width: 550px;
+}
+/* 비디오 뒷 배경 */
+.eventVideo::after{
+    top:50px;
+    left: 150px;
+}
+	
+/* 인스타그램 */
+.in_text h3{
+    font: bold 1.7em / 40px 'Dolbomche_b';
+}
+ .in_text p{
+	font: bold 1em / 25px 'Dolbomche_b';
+	margin: 5px 0 30px 0;
+}
+/* 인스타그램 이미지 */
+.in_img ul{
+    margin-bottom: 5px;
+}
+.in_img img{
+    width: 94%;
+}
+
+	
+/* footer */
+footer{
+    margin-top: 60px;
+}
+/* 상단 footer 라인 */
+.f_top{
+    height: 28px;
+}
+.ftop_text{
+    width: 1000px;
+}
+.ftop_text>p>a{
+    color: white;
+    line-height: 28px;
+    font-size: 0.8em;
+}
+
+.f_wrap{
+    width: 1000px;
+    padding: 15px 0px;
+	box-sizing: border-box;
+}
+.f_wrap>img{
+    width: 150px;
+}
+
+.f_textL>p:nth-child(odd){
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.f_textL>p:nth-child(2n){
+    line-height: 20px;
+    font-size: 0.8em;
+}
+.f_textL>p:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.f_textR>p:first-child{
+    font-size: 0.9em;
+}
+.f_textR>p:nth-child(2){
+    font-size: 1.5em;
+    margin-top: 10px;
+     margin-bottom: 10px;
+}
+.f_textR>p:nth-child(3){
+    line-height: 20px;
+    font-size: 0.8em;
+}
+.f_textR>p:last-child{
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.f_bottom{
+    height: 28px;
+}
+.fbot_text{
+    width: 1000px;
+}
+.fbot_text>p:first-child{
+    color: white;
+    line-height: 28px;
+    font-size:  0.8em;
+}
+.fbot_text a{
+    line-height: 28px;
+    font-size: 0.8em;
+}
+
+	
+}
+
+

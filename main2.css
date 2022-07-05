@@ -1,0 +1,118 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 헤더 */
+header{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+header li>a{
+ font-family: 'Dolbomche_b';
+ color: #370818;
+ font-size: 0.95rem;
+}
+.header_R{
+    width: 100%;
+    height: 40px;
+}
+.header_R>ul{
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.header_R>ul>li{
+    margin-right: 15px;
+}
+/* 로고 이미지 */
+.header_R>ul>li:nth-child(4){
+    width: 20px;
+    height: 20px;
+    background: url(../img/104498_facebook_icon.png) no-repeat center / cover;
+}
+.header_R>ul>li:nth-child(5){
+    width: 20px;
+    height: 20px;
+    background: url(../img/5335781_camera_instagram_social\ media_instagram\ logo_icon.png) no-repeat center / cover;
+}
+.header_R>ul>li:nth-child(6){
+    width: 20px;
+    height: 20px;
+    background: url(../img/306162_tube_youtube_you_icon.png) no-repeat center / cover;
+    margin-left: 5px;
+}
+
+/* nav 메뉴 */
+/* 헤더 */
+.mainWrap{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    transition:height 0.4s;
+    position: relative;
+    z-index: 9;
+}
+nav{
+    width: 72.9%;
+    margin: 0 auto;
+}
+nav>ul{
+    width:100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+	text-align: center;
+}
+nav>ul>li>a{
+    text-align:center;
+    font-size: 1.3rem;
+    line-height: 80px;
+}
+.imgs img{
+    width: 150px;
+    height: 75px;
+} 
+/* 서브메뉴 */
+.subMenu{
+    position:relative;
+	
+}
+.subMenu li{
+    width: 120px;
+    line-height: 50px;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e5e5;
+}
+.subMenu li>a{
+	font-size: 1.1em;
+}

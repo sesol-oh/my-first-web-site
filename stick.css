@@ -1,0 +1,719 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap{
+    width: 100%; 
+    overflow: hidden;
+}
+a:hover{
+    color:#b1b1b1;
+    cursor: pointer;
+}
+
+/* 콘텐츠 메뉴 */
+#con_menu{
+    width: 74%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* 서브텍스트 */
+.menutext h1,h3{
+    color: #370818;
+    font-family: 'Dolbomche_R';
+}
+.menutext>h1{
+	font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+.menutext>h3{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+.menutext>p{
+    border-bottom: 3px solid #370818;
+    margin-bottom: 20px;
+}
+
+/* 콘텐츠 메뉴 gnb*/
+.con_gnb{
+    width: 99%;
+    margin: 0 auto;
+}
+.con_gnb>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con_gnb li a{
+    font-family: 'Dolbomche_R';
+    font-size: 1.3em;
+}
+.con_gnb li:nth-child(4){
+    font-weight: 900;
+}
+
+/* 메뉴 콘텐츠 */
+
+
+/* 모든 라인 기본 설정*/
+.line{
+    width: 73%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.line>ul{
+    width: 48%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.line li:first-child{
+    width: 25%;
+    border-bottom: 1px solid #370818;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 2.2em;
+    color: #370818;
+    text-align: center;
+    font-family: 'Dolbomche_b';
+}
+.n_d+p{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Dolbomche_b';
+	color: #370818;
+    margin-top: 5px;
+}
+
+.line li:nth-child(3){
+    width: 25%;
+    border-bottom: 1px solid #370818;
+}
+
+/* 스틱바 기본 설정 */
+.stick_wrap{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6%;
+}
+.stick{
+    position: relative;
+}
+.stick p{
+    font-family: 'Dolbomche_b';
+    font-size: 1.1em;
+	color: #370818;
+	line-height: 26px;
+    margin-top: 40px;
+}
+.stick_img>img{
+    width:95%;
+}
+
+/* 배경색 지정 */
+.color{
+	width: 180px;
+	height: 180px;
+    position: absolute;
+    z-index: -9;
+    border-radius: 100%;
+	left: 15%;
+	bottom: 33%;
+ }
+ /* 스틱 라인1 */
+.twist_c{
+    background-color:#f9999c;
+}
+.caramel_c{
+    background-color: #f79548;
+}
+.maca_c{
+    background-color: #fcbd5e;
+}
+.choc_c{
+    background-color: #6d361e;
+}
+
+/* 스틱 라인2 */
+.melon_c{
+    background-color: #f5f396;
+}
+.mango_c{
+    background-color: #fcb52b;
+}
+.green_c{
+    background-color: #daeeac;
+}
+.cookies_c{
+    background-color: #d4d2ce;
+}
+/* 스틱 라인3 */
+.strow_c{
+    background-color: #fddcd6;
+}
+.s_margin{
+    margin-bottom: 0;
+}
+
+/* 스틱바 팩 기본설정 */
+.pack_wrap{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+}
+.pack p{
+    font-family: 'Dolbomche_b';
+     font-size: 1.1em;
+	color: #370818;
+	line-height: 26px;
+    margin-top: 40px;
+}
+.pack_img>img{
+  	width: 100%;
+    box-shadow: 2px 2px 5px grey;
+}
+
+/* 미니팩 */
+.mpack_wrap{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+}
+.m2{
+    padding-left: 105px;
+}
+.mpack p{
+    font-family: 'Dolbomche_b';
+      font-size: 1.1em;
+	color: #370818;
+	line-height: 26px;
+    margin-top: 40px;
+}
+.minipack_img>img{
+    width: 90%;
+    box-shadow: 2px 2px 5px grey;
+}
+.mpack span{
+	display: none;
+}
+
+/* 샌드 */
+.sand_wrap{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+	 margin-bottom: 6%;
+}
+.sand:nth-child(2){
+    padding-left: 105px;
+}
+.sand p{
+    font-family: 'Dolbomche_b';
+    font-size: 1.1em;
+	color: #370818;
+	line-height: 26px;
+    margin-top: 40px;
+}
+.sand_img>img{
+    width: 100%;
+}
+
+
+
+/* 반응형 웹 */
+
+
+
+/* 모바일 */
+@media all and (max-width:768px) { 
+
+/* 콘텐츠 메뉴 */
+#con_menu{
+    width: 90%;
+}
+/* 서브텍스트 */
+.menutext>h1{
+	font-size: 1.2rem;
+    margin-bottom: 10px;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.menutext>h3{
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+	font-weight: 900;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.menutext>p{
+    border-bottom: 2px solid #370818;
+    margin-bottom: 10px;
+}
+
+/* 콘텐츠 메뉴 gnb*/
+.con_gnb{
+    width: 99%;
+    margin-bottom: 10px;
+}
+.con_gnb li a{
+    font-size: 0.8em;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.con_gnb li:nth-child(4)>a{
+	color: #949494;
+}	
+
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 90%;
+}
+.line>ul{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.line li:first-child,
+.line li:nth-child(3){
+    width: 23%;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 1.1em;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.n_d+p{
+    margin-top: 3px;
+	font: bold 0.75em / 20px 'NEXON Lv1 Gothic OTF Light';
+}
+	
+/* 스틱바 기본 설정 */
+.stick_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.stick{
+    position: relative;
+	width: 50%;	
+	float: left;
+	margin-bottom: 15%;
+}
+.stick p{
+    font-size: 0.75em;
+	line-height: 22px;
+    margin-top: 10px;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.stick_img>img{
+    width: 85%;
+}
+
+/* 배경색 지정 */
+.color{
+	display: none;
+ }
+.clear{
+	clear: both;		
+}	
+.s_margin .stick{
+	margin-bottom: 0;		
+}	
+	
+/* 스틱바 팩 기본설정 */
+.pack_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.pack{
+	width: 50%;	
+	float: left;
+}
+.pack:nth-child(1),
+.pack:nth-child(2){
+	margin-bottom: 10%;
+}	
+.pack p{
+    font-size: 0.75em;
+	line-height: 22px;
+    margin-top: 10px;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.pack_img>img{
+  	width: 70%;
+    box-shadow: 1px 1px 3px grey;
+}
+
+/* 미니팩 */
+.mpack_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.m2{
+    padding-left: 0px;
+}
+.mpack{
+	width: 50%;	
+	float: left;	
+}
+.mpack:first-child,
+.mpack:nth-child(2){
+	margin-bottom: 10%;		
+}	
+.mpack p{
+    display: none;
+}
+.mpack span{
+	display: block;
+	font:bold 0.75em / 23px 'NEXON Lv1 Gothic OTF Bold';
+	color: #370818;
+    margin-top: 10px;
+}	
+.minipack_img>img{
+    width: 80%;
+    box-shadow: 1px 1px 3px grey;
+}
+	
+/* 샌드 */
+.sand_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.sand{
+	width: 50%;
+	float: left;
+	margin-bottom: 10%;
+}	
+.sand:nth-child(2){
+    padding-left: 0px;
+}
+.sand p{
+	font:bold 0.72em / 22px 'NEXON Lv1 Gothic OTF Bold';
+    margin-top: 10px;
+}
+.sand_img>img{
+    width: 80%;
+}
+}
+
+
+/* 태블릿 사이즈*/
+@media all and (min-width:769px) and (max-width:1024px) {
+	
+	/* 콘텐츠 메뉴 */
+#con_menu{
+    width: 95%;
+}
+/* 서브텍스트 */
+.menutext>h1{
+	font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+.menutext>h3{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.menutext>p{
+    margin-bottom: 15px;
+}
+
+/* 콘텐츠 메뉴 gnb*/
+.con_gnb{
+    width: 99%;
+}
+.con_gnb li a{
+    font-size: 1.4em;
+}
+
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 95%;
+}
+.line>ul{
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.line li:first-child,
+.line li:nth-child(3){
+    width: 20%;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 2em;
+}
+.n_d+p{
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+	
+/* 스틱바 기본 설정 */
+.stick_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.stick{
+	width: 50%;	
+	float: left;
+	margin-bottom: 6%;
+}
+.stick p{
+    font-size: 1.35em;
+	line-height: 35px;
+    margin-top: 15px;
+}
+.stick_img>img{
+    width: 70%;
+}
+
+/* 배경색 지정 */
+.color{
+	display: none;
+ }
+.clear{
+	clear: both;		
+}	
+.s_margin .stick{
+	margin-bottom: 0;		
+}	
+	
+/* 스틱바 팩 기본설정 */
+.pack_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.pack{
+	width: 50%;	
+	float: left;
+}
+.pack:nth-child(1),
+.pack:nth-child(2){
+	margin-bottom: 6%;
+}	
+.pack p{
+    font-size: 1.4em;
+	line-height: 35px;
+    margin-top: 15px;
+}
+.pack_img>img{
+  	width: 55%;
+}
+
+/* 미니팩 */
+.mpack_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.m2{
+    padding-left: 0px;
+}
+.mpack{
+	width: 50%;	
+	float: left;	
+}
+.mpack:first-child,
+.mpack:nth-child(2){
+	margin-bottom: 6%;		
+}	
+.mpack p{
+    display: none;
+}
+.mpack span{
+	display: block;
+	font:bold 1.4em / 35px 'Dolbomche_r';
+	color: #370818;
+    margin-top: 20px;
+}	
+.minipack_img>img{
+    width: 65%;
+}
+	
+/* 샌드 */
+.sand_wrap{
+    width: 90%;
+    display: block;
+    justify-content: normal;
+}
+.sand{
+	width: 50%;
+	float: left;
+	margin-bottom: 6%;
+}	
+.sand:nth-child(2){
+    padding-left: 0px;
+}
+.sand p{
+    font-size: 1.35em;
+	line-height: 35px;
+    margin-top: 20px;
+}
+.sand_img>img{
+    width:65%;
+}	
+}
+
+
+/* 노트북 사이즈*/
+@media all and (min-width:1025px) and (max-width:1520px) { 
+/* 콘텐츠 메뉴 */
+#con_menu{
+	padding-left: 20px;
+}
+.menutext>h1{
+	font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+.menutext>h3{
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+}
+.menutext>p{
+    border-bottom: 2px solid #370818;
+    margin-bottom: 10px;
+}
+
+/* 콘텐츠 메뉴 gnb*/	
+.con_gnb li a{
+    font-size: 0.9em;
+}	
+	
+/* 메뉴 라인 초기화 설정 */
+.line{
+    width: 73%;
+}
+.line>ul{
+    width: 48%;
+}
+.line li:first-child{
+    width: 25%;
+}
+
+/* 모든 상단 메뉴 텍스트 설정 */
+.n_d{
+    font-size: 1.4em;
+}
+.n_d+p{
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+	
+/* 스틱바 기본 설정 */
+.stick_wrap{
+    width: 78%;
+    margin-bottom: 6%;
+}
+.stick p{
+    font-size: 0.8em;
+	line-height: 20px;
+    margin-top: 20px;
+}
+.stick_img>img{
+    width: 70%;
+}
+
+/* 배경색 지정 */
+.color{
+	width: 120px;
+	height: 120px;
+	left: 25%;
+	bottom: 35%;
+ }
+.s_margin{
+    margin-bottom: 0;
+}
+
+/* 스틱바 팩 기본설정 */
+.pack_wrap{
+    width: 78%;
+}
+.pack p{
+    font-size: 0.8em;
+	line-height: 20px;
+    margin-top: 20px;
+}
+.pack_img>img{
+  	width: 65%;
+}
+
+/* 미니팩 */
+.mpack_wrap{
+    width: 78%;
+}
+.m2{
+    padding-left: 10px;
+}
+.mpack p{
+    font-size: 0.75em;
+	line-height: 20px;
+    margin-top: 20px;
+}
+.minipack_img>img{
+    width: 70%;
+}
+
+/* 샌드 */
+.sand_wrap{
+    width: 78%;
+}
+.sand{
+	margin-left: -15px;		
+}	
+.sand:nth-child(2){
+    padding-left: 0px;
+}
+.sand p{
+    font-size: 0.8em;
+	line-height: 20px;
+    margin-top: 20px;
+}
+.sand_img>img{
+    width: 70%;
+}
+	
+}
+	
+
+

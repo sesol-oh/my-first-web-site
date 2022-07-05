@@ -1,0 +1,348 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap{
+    width: 100%;
+    overflow: hidden;
+}
+a:hover{
+    color:#ececec;
+    cursor: pointer;
+}
+/* 멤버십 상단 텍스트 */
+
+/* 텍스트 폰트 색상 설정 */
+h1,h2,li,p{
+    font-family: 'Dolbomche_R';
+    color:#370818;
+}
+
+.mem_text{
+    text-align: center;
+}
+.mem_text>h1{
+    font-size: 2.6em;
+    margin-bottom: 10px;
+}
+.mem_text>p{
+    font-size: 1em;
+    margin-bottom: 2.5%;
+}
+
+/* 멤버십 콘텐츠 */
+.mem_contents{
+    width: 73%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 2.5%;
+}
+.m_img{
+    width: 73%;
+    height: 60px;
+    position: absolute;
+    z-index: -9;
+    left: 50%;
+    transform:translate(-50%);
+}
+.m_img::before{
+    content: "";
+    /* background: url(/img/memback.png);
+    background-size: cover; */
+    background-color: #d7d5d5;
+    opacity: 0.55;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.mem_contents h2{
+    margin-bottom: 28%;
+	font: bold 1.7em / 60px 'Dolbomche_R';
+}
+.mem_contents p{
+    margin-top: 50px;
+	font : 900 1.5em / 33px 'Dolbomche_R';
+}
+.s_g{
+    font-size: 0.7em;
+    font-family: 'Dolbomche_R';
+    color: #6d6d6d;
+}
+/* 주의사항 */
+.m_img2{
+    width: 73%;
+    height: 60px;
+    position: absolute;
+    z-index: -9;
+    left: 50%;
+    transform:translate(-50%);
+}
+.m_img2::before{
+    content: "";
+    /* background: url(/img/memback.png);
+    background-size: cover; */
+    background-color: #d7d5d5;
+    opacity: 0.55;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.caution{
+    width: 73%;
+    margin: 0 auto;
+    overflow: hidden;
+	margin-bottom: 50px;
+}
+.caution>h2{
+    text-align: center;
+    margin-bottom: 50px;
+	font : bold 1.8em / 60px 'Dolbomche_R';
+}
+.caution li{
+    text-align: center;
+	font : bold 1.4em / 60px 'Dolbomche_R';
+}
+.br_mo{
+	display: none;
+}
+.br_ta{
+	display: none;
+}
+
+
+
+
+/* 반응형 웹 */
+
+
+
+
+
+/* 모바일 */
+@media all and (max-width:768px) { 
+.mem_text>h1{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.mem_text>p{
+	display: none;
+}
+
+/* 멤버십 콘텐츠 */
+.mem_contents{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+.mem_contents div{
+	margin-bottom: 4%;		
+}	
+.mem_contents img{
+	width: 30%;		
+}	
+.m_img{
+	display: none;
+}
+.mem_contents h2{
+    margin-bottom: 7%;
+	font: bold 1.2em / 50px 'NEXON Lv1 Gothic OTF Bold';
+}
+.mem_contents h2::before{
+		content: '';
+		width: 100%;
+		height: 50px;
+		background-color: #d7d5d5;
+		position: absolute;
+		z-index: -9;
+		left: 0;
+		opacity: 0.55;
+}		
+.mem_contents p{
+    margin-top: 10px;
+	font : bold 1em / 28px 'NEXON Lv1 Gothic OTF Bold';
+}
+.s_g{
+    font-size: 0.8em;
+   font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+/* 주의사항 */
+.m_img2{
+    width: 100%;
+    height: 50px;
+}
+.m_img2::before{
+    background-color: #370818;
+    opacity: 1;
+}	
+.caution{
+    width: 100%;
+	margin-bottom: 0;
+}
+.caution>h2{
+    margin-bottom: 0px;
+	font : bold 1.2em / 50px  'NEXON Lv1 Gothic OTF Bold';
+	color: #fff;
+}
+.caution li{
+	height: 100%;
+	border-bottom: 1px solid #370818;
+	padding: 3%;
+	font : bold 0.8em / 30px 'NEXON Lv1 Gothic OTF Bold';
+	margin-bottom: 0px;	
+	white-space: nowrap;
+}
+.br_mo{
+	display: inherit;		
+}
+#footer{
+	margin-top: 0;		
+}	
+}
+
+
+
+/* 태블릿 사이즈*/
+@media all and (min-width:769px) and (max-width:1024px) {
+.mem_text>h1{
+    font-size: 2.6em;
+    margin-bottom: 30px;
+}
+.mem_text>p{
+   display: none;
+}
+
+/* 멤버십 콘텐츠 */
+.mem_contents{
+    width: 100%;
+    margin-bottom:5%;
+}
+.m_img{
+    width: 100%;
+    height: 70px;
+}
+.mem_contents h2{
+    margin-bottom: 10%;
+	font: bold 2em / 70px 'Dolbomche_R';
+}
+.mem_contents>div:first-child>h2{
+	margin-bottom: 30%;		
+}	
+.mem_contents>div:last-child>h2{
+	margin-bottom: 30%;		
+}		
+.mem_contents p{
+    margin-top: 40px;
+	font : bold 1.8em / 45px 'Dolbomche_R';
+}
+.mem_contents img{
+	width: 80%;	
+}	
+.s_g{
+    font-size: 0.8em;
+}
+/* 주의사항 */
+.m_img2{
+    width: 100%;
+    height: 70px;
+}
+.caution{
+    width: 97%;
+	margin-bottom: 0;
+}
+.caution>h2{
+    text-align: center;
+    margin-bottom: 10px;
+		font: bold 2em / 70px 'Dolbomche_R';
+}
+.caution li{
+	height: 100%;
+	border-bottom: 1px solid #370818;
+    text-align: left;
+	padding: 20px 5px;
+	font : bold 1.6em / 60px 'Dolbomche_R';
+}
+.br_mo{
+	display: none;
+}
+.br_ta{
+	display: inherit;
+}	
+#footer{
+	margin-top: 0;		
+}	
+}
+
+
+
+
+/* 노트북 사이즈*/
+@media all and (min-width:1025px) and (max-width:1520px) { 
+.mem_text>h1{
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+.mem_text>p{
+    font-size: 0.7em;
+    margin-bottom: 2.5%;
+}
+
+/* 멤버십 콘텐츠 */
+.m_img{
+    height: 40px;
+}
+.mem_contents{
+	margin-bottom: 10px;		
+}	
+.mem_contents h2{
+    margin-bottom: 15%;
+	font: bold 1.15em / 40px 'Dolbomche_R';
+}
+.mem_contents p{
+    margin-top: 15px;
+	font : bold 1em / 24px 'Dolbomche_R';
+}
+.mem_contents img{
+		width: 65%;
+}	
+.s_g{
+    font-size: 0.75em;
+}
+/* 주의사항 */
+.m_img2{
+    height: 40px;
+}
+.caution{
+	margin-bottom: 50px;
+}
+.caution>h2{
+    margin-bottom: 20px;
+	font : bold 1.15em / 40px 'Dolbomche_R';
+}
+.caution li{
+	font : bold 0.95em / 45px 'Dolbomche_R';
+}
+}

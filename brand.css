@@ -1,0 +1,625 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dolbomche_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap{
+    width: 100%; 
+    overflow: hidden;
+}
+a:hover{
+    color:#b1b1b1;
+    cursor: pointer;
+}
+iframe{
+    border: none;
+}
+
+/*  메인 콘텐츠 */
+section{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.mainText{
+    text-align: center;
+}
+.mainText>h1{
+    margin-bottom: 10px;
+    color: #370818;
+	font : bold 3em / 55px 'Dolbomche_R';
+}
+.mainText p{
+    margin-bottom: 3%;
+    color: #370818;
+	font: bold 1.05em / 30px 'Dolbomche_b';
+}
+.mainText span{
+	display: none;
+}
+/* 동영상 배치 */
+.v_wrap{
+    width: 100%;
+	margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.colorBar{
+    width: 100%;
+    height: 100px;
+    background-color: #370818;
+    position: absolute;
+    top: 40%;
+    z-index: -1;
+}
+.video{
+    width: 50.5%;
+	height: 546px;
+    margin: 0 auto;
+	position: relative;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 서브 텍스트 */
+.subText{
+    text-align: center;
+    margin-top: 6%;
+}
+.line{
+    width: 20%;
+    margin: 0 auto;
+    border-top: 1px solid #370818;
+}
+.subText h2{
+    font-family: 'Dolbomche_R';
+    margin-top: 3%;
+    font-size: 2.7em;
+    color: #370818;
+}
+.subText p{
+    font-family: 'Dolbomche_b';
+    font-size: 1.1em;
+     color: #370818;
+    margin-top: 10px;
+    margin-bottom: 4%;
+}
+/* 서브 콘텐츠 내용 */
+.subContent{
+    width: 62.5%;
+    margin: 0 auto;
+}
+.subContent>ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.subContent li{
+	width: 30%;
+    text-align: center;
+    color: #370818;
+	font : bold 1.28rem / 45px 'Dolbomche_b';
+	white-space: nowrap;
+}
+.subContent li>span{
+	display: block;
+	margin-bottom: 30px;
+	font : bold 1.3em / 45px 'Dolbomche_b';
+}
+/* 콘텐츠 박스들 */
+.content_wrap{
+	width: 100%;
+	position: relative;
+	margin-bottom: 100px;
+}
+#contentsBox{
+    width: 65%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    position: relative;
+    grid-template-columns:repeat(3, 1fr);
+    align-items: center;
+}
+/* 박스들 포지션 지정후 배치 */
+#contentsBox div{
+    position: relative;
+    /* border: 1px solid #000;
+    box-sizing: border-box; */
+}
+
+
+/* 사이드 박스 사선으로 배치해줌 */
+.box2,.box4,.box8,.box10{
+    position: relative;
+    top: 50%;
+}
+/* 박스 중간으로 모이게 배치 */
+.box2,.box4{
+    justify-self: start;
+}
+.box8,.box10{
+    justify-self: end;
+}
+/* 맨밑박스 가운데 배치 */
+.box6{
+    left: 100%;
+}
+/* 박스 사이에 마진 여백 줌*/
+.box10,.box2{
+    margin-bottom: 15%;
+}
+/* 동그란 이미지 사이즈 조정 */
+#contentsBox img:not(.boxcenter2){
+    width: 330px;
+    height: 330px;
+}
+#contentsBox>div h3{
+    margin-bottom:10px;
+}
+.boxcenter1>img{
+	width: 300px;
+}
+
+/* 박스 어둡게 */
+#contentsBox .hover{
+    position: absolute;
+    border-radius: 100%;
+}
+#contentsBox>div:hover>.hover{
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background-color: black;
+    transition: all 1s;
+    opacity: 0.6;
+	cursor: pointer;
+}
+
+
+/* 박스안에 텍스트 */
+#contentsBox p{
+    height: 0;
+    text-align: center;
+    color: white;
+    display: none;
+	font : bold 1.4em / 30px 'Dolbomche_B';
+}
+.t_s{
+    position: relative;
+    bottom: 200px;
+}
+.t_s1{
+    position: relative;
+    bottom:  220px;
+}
+.t_s2{
+    position: relative;
+    bottom: 230px;
+}
+#contentsBox>div:hover p{
+    display:inherit;
+}
+
+
+/* 반응형 웹 */
+
+
+/* 모바일 */
+@media all and (max-width:768px) { 
+/*  메인 콘텐츠 */
+
+.mainText>h1{
+	margin-top: 10px;
+    margin-bottom: 5px;
+	font : bold 1.4em / 30px 'NEXON Lv1 Gothic OTF Bold';
+}
+.mainText p{
+	display: none;
+}
+.mainText span{
+	display: block;
+	font : bold 0.8rem / 30px 'NEXON Lv1 Gothic OTF Bold';
+	margin-bottom: 15px;
+	color: #370818;
+}	
+/* 동영상 배치 */
+.colorBar{
+	display: none;
+}
+.video{
+    width: 100%;
+	height: 300px;
+}
+	
+
+/* 서브 텍스트 */
+.subText{
+    margin-top: 15%;
+}
+.line{
+    width: 60%;
+    border-top: 2px solid #370818;
+}
+.subText h2{
+    margin-top: 6%;
+    font-size: 1.6em;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+.subText p{
+    font-size: 0.85em;
+    margin-bottom: 8%;
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+/* 서브 콘텐츠 내용 */
+.subContent{
+    width: 100%;
+    margin: 0 auto;
+}
+.subContent>ul{
+    display: block;
+}
+.subContent li{
+	width: 85%;
+	margin: 0 auto;
+	font : bold 0.87rem / 30px 'NEXON Lv1 Gothic OTF Bold';
+	margin-bottom: 10%;
+	box-sizing: border-box;
+}
+.subContent li>span{
+	margin-bottom:5px;
+	font : bold 1.25em / 40px 'NEXON Lv1 Gothic OTF Bold';
+	background-color: #370818;
+	color: #fff;
+}	
+	
+	
+/* 콘텐츠 박스들 */
+.content_wrap{
+	margin-bottom: 50px;
+}
+#contentsBox{
+    width: 90%;
+    display: block;
+}
+/* 박스들 포지션 지정후 배치 */
+#contentsBox div{
+	width: 50%;
+	float: left;
+}
+	
+/* 맨밑박스 가운데 배치 */
+.box6{
+    left: 0%;
+}
+/* 박스 사이에 마진 여백 줌*/
+.box10,.box2{
+    margin-bottom: 5%;
+}
+/* 동그란 이미지 사이즈 조정 */
+#contentsBox img:not(.boxcenter2){
+    width: 90%;
+    height: auto;
+}
+#contentsBox>div h3{
+    margin-bottom:10px;
+}
+.boxcenter1>img{
+	display: none;
+}
+.clear{
+	clear: both;		
+}	
+	
+
+/* 박스 어둡게 */
+#contentsBox .hover{
+    border-radius: 100%;
+	width: 90%;
+	height: 97%;
+	background-color: black;
+	opacity: 0.4;
+}
+#contentsBox>div:hover>.hover{
+    display: none;
+}	
+
+
+/* 박스안에 텍스트 */
+#contentsBox p{
+    display:inherit;
+	font : bold 0.8em / 210% 'NEXON Lv1 Gothic OTF Bold';
+}
+.t_s{
+    position: relative;
+    bottom: 115px;
+}
+.t_s::before{
+	content: '1961년에 탄생한 \A 하겐다즈, 뉴욕에 있는 \A 하겐다즈 1호점 \A\A\A';
+	white-space:pre;
+}	
+.t_s1{
+    position: relative;
+    bottom: 120px;
+}
+.t_s2{
+    position: relative;
+    bottom: 110px;
+}
+.t_s2::before{
+	content: '창립자의 영감을 받아 \A 항상 새로운 시도를하는 \A 하겐다즈 입니다. \A\A\A';
+	white-space:pre;
+}	
+#contentsBox>div:hover p{
+    display: block;
+}
+
+}
+
+/* 태블릿 사이즈*/
+@media all and (min-width:769px) and (max-width:1024px) {
+	
+/*  메인 콘텐츠 */
+.mainText>h1{
+    margin-bottom: 20px;
+	font : bold 2.5em / 35px 'Dolbomche_R';
+}
+.mainText p{
+	display: none;
+}
+.mainText span{
+	display: block;
+	font : bold 1.3rem / 35px 'Dolbomche_b';
+	margin-bottom: 20px;
+	color: #370818;
+}	
+/* 동영상 배치 */
+.colorBar{
+	display: none;
+}
+.video{
+    width: 100%;
+	height: 500px;
+}
+	
+
+/* 서브 텍스트 */
+.subText{
+    margin-top: 10%;
+}
+.line{
+    width: 35%;
+    border-top: 2px solid #370818;
+}
+.subText h2{
+    margin-top: 4%;
+/*    font-size: 1em;*/
+}
+.subText p{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+}
+/* 서브 콘텐츠 내용 */
+.subContent{
+    width: 100%;
+    margin: 0 auto;
+}
+.subContent>ul{
+    display: block;
+}
+.subContent li{
+	width: 85%;
+	margin: 0 auto;
+	font : bold 1.3rem / 45px 'Dolbomche_b';
+	margin-bottom: 5%;
+	box-sizing: border-box;
+}
+.subContent li .br_none{
+		display: none;
+}	
+.subContent li>span{
+	margin-bottom:15px;
+	font : bold 1.4em / 50px 'Dolbomche_b';
+	background-color: #370818;
+	color: #fff;
+}	
+	
+	
+/* 콘텐츠 박스들 */
+.content_wrap{
+	margin-bottom: 50px;
+}
+#contentsBox{
+    width: 90%;
+    display: block;
+}
+/* 박스들 포지션 지정후 배치 */
+#contentsBox div{
+	width: 50%;
+	float: left;
+}
+	
+/* 맨밑박스 가운데 배치 */
+.box6{
+    left: 0%;
+}
+/* 박스 사이에 마진 여백 줌*/
+.box10,.box2{
+    margin-bottom: 5%;
+}
+/* 동그란 이미지 사이즈 조정 */
+#contentsBox img:not(.boxcenter2){
+    width: 80%;
+    height: auto;
+}
+.boxcenter1>img{
+	display: none;
+}
+.clear{
+	clear: both;		
+}	
+	
+
+/* 박스 어둡게 */
+#contentsBox .hover{
+    border-radius: 100%;
+	width: 80%;
+	height: 99%;
+	background-color: black;
+	opacity: 0.4;
+}
+#contentsBox>div:hover>.hover{
+    display: none;
+}	
+
+
+/* 박스안에 텍스트 */
+#contentsBox p{
+    display:inherit;
+	font : bold 1.45em / 210% 'Dolbomche_B';
+}
+.t_s{
+    position: relative;
+    bottom: 210px;
+}
+.t_s::before{
+	content: '1961년에 탄생한 \A 하겐다즈, 뉴욕에 있는 \A 하겐다즈 1호점 \A\A\A';
+	white-space:pre;
+}	
+.t_s1{
+    position: relative;
+    bottom: 210px;
+}
+.t_s2{
+    position: relative;
+    bottom: 210px;
+}
+.t_s2::before{
+	content: '창립자의 영감을 받아 \A 항상 새로운 시도를하는 \A 하겐다즈 입니다. \A\A\A';
+	white-space:pre;
+}	
+#contentsBox>div:hover p{
+    display: block;
+}
+}
+
+/* 노트북 사이즈*/
+@media all and (min-width:1025px) and (max-width:1520px) { 
+/*  메인 콘텐츠 */
+.mainText>h1{
+	margin-top: 10px;
+    margin-bottom: 5px;
+	font : bold 1.9em / 40px 'Dolbomche_R';
+}
+.mainText p{
+    margin-bottom: 1%;
+	font: bold 0.65em / 30px 'Dolbomche_b';
+}
+	
+/* 동영상 배치 */
+.colorBar{
+    height: 80px;
+    top: 40%;
+    z-index: -1;
+}
+.video{
+    width: 49%;
+	height: 350px;
+}
+
+/* 서브 텍스트 */
+.subText{
+    text-align: center;
+    margin-top: 8%;
+}
+.line{
+    width: 23%;
+    border-top: 1px solid #370818;
+}
+.subText h2{
+    margin-top: 3%;
+    font-size: 1.8em;
+}
+.subText p{
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 4%;
+}
+	
+/* 서브 콘텐츠 내용 */
+.subContent>ul{
+    margin-bottom: 3%;
+}
+.subContent li{
+	width: 30%;
+	font : bold 0.85rem / 30px 'Dolbomche_b';
+}
+.subContent li>span{
+	margin-bottom: 20px;
+	font : bold 1.3em / 30px 'Dolbomche_b';
+}
+/* 콘텐츠 박스들 */
+.content_wrap{
+	margin-bottom: 50px;
+}
+#contentsBox{
+	width: 70%;
+}
+/* 박스 사이에 마진 여백 줌*/
+.box10,.box2{
+    margin-bottom: 15%;
+}
+/* 동그란 이미지 사이즈 조정 */
+#contentsBox img:not(.boxcenter2){
+    width: 220px;
+    height: 220px;
+}
+.boxcenter1>img{
+	width: 200px;
+}
+
+/* 박스 어둡게 */
+#contentsBox>div:hover>.hover{
+    width: 220px;
+    height: 220px;
+}
+
+
+/* 박스안에 텍스트 */
+#contentsBox p{
+	font : bold 0.9em / 30px 'Dolbomche_B';
+}
+.t_s{
+    position: relative;
+    bottom: 150px;
+}
+.t_s1{
+    position: relative;
+    bottom:  160px;
+}
+.t_s2{
+    position: relative;
+    bottom: 190px;
+}
+}
+
+
